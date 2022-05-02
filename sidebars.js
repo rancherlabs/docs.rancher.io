@@ -26,7 +26,7 @@ const sidebars = {
         "getting-started/introduction", 
         "getting-started/installation", 
       ],
-      collapsed: false,
+      collapsed: true,
     },
     {
       type: 'category',
