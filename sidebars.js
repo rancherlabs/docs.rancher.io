@@ -23,8 +23,9 @@ const sidebars = {
       type: 'category',
       label: 'Getting Started',
       items: [
-        "getting-started/introduction", 
-        "getting-started/installation", 
+        "getting-started/introduction/introduction",
+        "getting-started/overview/overview",
+        "getting-started/installation/installation",
       ],
       collapsed: true,
     },
@@ -32,25 +33,19 @@ const sidebars = {
       type: 'category',
       label: 'Tutorials',
       items: [ 
-        "tutorials/admin-settings/overview/authentication-permissions-and-configuration",
-        "tutorials/admin-settings/overview/authentication/active-directory/configuring-active-directory",
-        "tutorials/admin-settings/overview/authentication/azure-ad/configuring-azure-ad",
-        "tutorials/admin-settings/overview/authentication/freeipa/configuring-freeipa",
-        "tutorials/admin-settings/overview/authentication/github/configuring-github",
-        "tutorials/admin-settings/overview/authentication/google-oauth/configuring-google-oauth",
-        "tutorials/admin-settings/overview/authentication/keycloak-oidc/configuring-keycloak-oidc",
-        "tutorials/admin-settings/overview/authentication/keycloak-saml/configuring-keycloak-saml",
-        "tutorials/admin-settings/overview/authentication/local/local-authentication",
-        "tutorials/admin-settings/overview/authentication/microsoft-adfs/configuring-ms-adfs-for-rancher",
-        "tutorials/admin-settings/overview/authentication/microsoft-adfs/configuring-rancher-for-ms-adfs",
-        "tutorials/admin-settings/overview/authentication/microsoft-adfs/microsoft-adfs-overview",
-        "tutorials/admin-settings/overview/authentication/okta-saml/configuring-okta-saml",
-        "tutorials/admin-settings/overview/authentication/open-ldap/configuring-openldap",
-        "tutorials/admin-settings/overview/authentication/open-ldap/openldap-config-reference",
-        "tutorials/admin-settings/overview/authentication/ping-federate/configuring-pingidentity-saml",
-        "tutorials/admin-settings/overview/authentication/shibboleth/configuring-shibboleth",
-        "tutorials/admin-settings/overview/authentication/shibboleth/shibboleth-and-openldap-permissions",
-        "tutorials/admin-settings/overview/authentication/users-and-groups/users-and-groups",
+        {
+          type: 'category',
+          label: 'Authentication',
+          items: [
+            {
+              type: 'category',
+              label: 'OpenLDAP',
+              items: [
+                "tutorials/authentication/openldap/configure-openldap"
+              ]
+            }  
+          ]
+        }
       ],
       collapsed: true,
     },
@@ -58,13 +53,7 @@ const sidebars = {
       type: 'category',
       label: 'How-to Guides',
       items: [
-        "how-to-guides/hello-world-example",
-        "how-to-guides/create-multi-node-cluster",
-        "how-to-guides/setup-NGINX-Ingress-Controller",
-        "how-to-guides/vs-code-docker", 
-        "how-to-guides/vs-code-remote-containers", 
-        "how-to-guides/rancher-on-rancher-desktop",
-        "how-to-guides/skaffold-and-rancher-desktop",
+        "how-to-guides/api",
       ],
       collapsed: true,
     },
@@ -73,12 +62,11 @@ const sidebars = {
       label: 'References',
       items: [
         "references/architecture",
-        "references/rdctl-command-reference"
+        "references/architecture-recommendations",
+        "references/kubernetes-concepts",
       ],
       collapsed: true,
-    },
-    "faq"
-  ],   
-};
-
+    }
+  ]
+}
 module.exports = sidebars;
