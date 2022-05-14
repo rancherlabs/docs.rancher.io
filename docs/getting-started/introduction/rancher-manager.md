@@ -1,6 +1,5 @@
 ---
 title: Rancher Manager
-sidebar_label: Introduction
 slug: /
 ---
 

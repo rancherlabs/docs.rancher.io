@@ -1,0 +1,3 @@
+---
+title: Equinix Metal
+---

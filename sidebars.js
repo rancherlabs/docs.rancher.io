@@ -22,13 +22,81 @@ const sidebars = {
     {
       type: 'category',
       label: 'Getting Started',
-      items: [
-        "getting-started/introduction/introduction",
-        "getting-started/overview/overview",
-        "getting-started/installation/installation",
+      items: [ 
+        {
+          type: 'category',
+          label: 'Introduction',
+          items: [
+            "getting-started/introduction/rancher-manager",
+            "getting-started/introduction/overview",
+            "getting-started/introduction/docs-structure",
+                 ], 
+            collapsed: true,          
+        },
+        {
+          type: 'category',
+          label: 'Quick Start Guides',
+          items: [
+            {
+              type: 'category',
+              label: 'Deploy Rancher Manager',
+              items: [
+                    "getting-started/quick-start-guides/deploy-rancher-manager/aws-with-terraform",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/aws-with-eks",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/azure",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/digitalocean",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/gcp",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/hetzner-cloud",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/vagrant",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/equinix-metal",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/helm-cli",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Deploy Rancher Workloads',
+              items: [      
+                    "getting-started/quick-start-guides/deploy-workloads/workload-ingress",
+                    "getting-started/quick-start-guides/deploy-workloads/nodeports",
+                           ],
+                           collapsed: true,
+                  }
+                     ]
+        },
+        {
+          type: 'category',
+          label: 'Installation and Upgrade',
+          items: [
+            {
+              type: 'category',
+              label: 'Installation Requirements',
+              items: [
+                    "getting-started/installation-and-upgrade/installation-requirements/install-docker",
+                    "getting-started/installation-and-upgrade/installation-requirements/dockershim",
+                    "getting-started/installation-and-upgrade/installation-requirements/port-requirements",
+                     ],
+                collapsed: true,
+            },
+            {
+              type: 'category',
+              label: 'Install/Upgrade on a Kubernetes Cluster',
+              items: [      
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/helm-chart-options",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rollbacks",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/upgrades",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/air-gapped-upgrades",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-amazon-eks",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-aks",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-gke",
+                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/troubleshooting",
+                    ],
+                  collapsed: true,
+                }
+                   ]
+        }
       ],
-      collapsed: true,
-    },
+    collapsed: true,
+    },      
     {
       type: 'category',
       label: 'Tutorials',
@@ -40,11 +108,22 @@ const sidebars = {
             {
               type: 'category',
               label: 'OpenLDAP',
+              link: {
+                type: 'doc', 
+                id: "page",
+
+              },
               items: [
-                "tutorials/authentication/openldap/configure-openldap"
+                {
+                  type: 'category',
+                  label: 'test-folder',
+                  items: [
+                    "tutorials/authentication/openldap/test-folder/configure-openldap"
+                         ]
+                }
               ]
-            }  
-          ]
+            }    
+                  ]
         }
       ],
       collapsed: true,
