@@ -126,7 +126,8 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/install-rancher",
                            ]
                           }
-                        ] 
+                        ],
+                        collapsed: true, 
             },
             {
               type: 'category',
@@ -140,43 +141,130 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/resources/upgrade-cert-manager",
                     "getting-started/installation-and-upgrade/resources/update-private-ca-certificate",
                     "getting-started/installation-and-upgrade/resources/bootstrap-password",
+                     ]
+            }, 
+            {
+              type: 'category',
+              label: 'Upgrade and Roll Back Kubernetes',
+              items: [
+                    "getting-started/installation-and-upgrade/upgrade-and-roll-back-kubernetes/upgrade-and-roll-back",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Upgrade Kubernetes without Upgrading Rancher',
+              items: [
+                    "getting-started/installation-and-upgrade/upgrade-kubernetes-without-upgrading-rancher/upgrade-kubernetes-not-rancher",
                      ],
-            }            
-                      ]
+                  collapsed: true,
+            },
+            { 
+              type: 'category',
+              label: 'Advanced Options',
+              items: [
+                {
+                    type: 'category',
+                    label: 'Enable Experimental Features',
+                    items: [
+                          "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/rancher-on-arm64",
+                          "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/feature-flags",
+                          "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/unsupported-storage-drivers",
+                          "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/istio-traffic-management-features",
+                          "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/continuous-delivery",
+                           ]
+                },
+                {
+                    type: 'category',
+                    label: 'Advanced Use Cases',
+                    items: [
+                          "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/open-ports-with-firewalld",
+                          "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/tune-etcd-for-large-installs",
+                          "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/enable-api-audit-log",
+                          "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
+                           ],
+                           collapsed: true,
+                          }
+                        ]
             }
           ]
-    },                            
+        }
+      ]
+    },
     {
       type: 'category',
       label: 'Tutorials',
       items: [ 
         {
           type: 'category',
-          label: 'Authentication',
+          label: 'Best Practices',
           items: [
             {
               type: 'category',
-              label: 'OpenLDAP',
-              link: {
-                type: 'doc', 
-                id: "page",
-
-              },
+              label: 'Rancher Server',
               items: [
+                     "tutorials/best-practices/rancher-server/on-premises-rancher-in-vsphere",
+                     "tutorials/best-practices/rancher-server/rancher-deployment-strategy",
+                     "tutorials/best-practices/rancher-server/tips-for-running-rancher"                            
+                     ]
+                    },
+            {
+              type: 'category',
+              label: 'Rancher-Managed Clusters',
+              items: [
+                     "tutorials/best-practices/rancher-managed-clusters/logging-best-practices",
+                     "tutorials/best-practices/rancher-managed-clusters/monitoring-best-practices",
+                     "tutorials/best-practices/rancher-managed-clusters/tips-to-set-up-containers",
+                     "tutorials/best-practices/rancher-managed-clusters/rancher-managed-clusters-in-vsphere"
+                     ]
+                    }
+                  ]
+        },
+        {
+          type: 'category',
+          label: 'Kubernetes Cluster Setup',
+          items: [
+                  "tutorials/kubernetes-cluster-setup/high-availability-installs",
+                  "tutorials/kubernetes-cluster-setup/k3s-for-rancher",
+                  "tutorials/kubernetes-cluster-setup/rke1-for-rancher",
+                  "tutorials/kubernetes-cluster-setup/rke2-for-rancher",
+                  ],
+        },
+        {
+          type: 'category',
+          label: 'Infrastructure Setup',
+          items: [
+                  "tutorials/infrastructure-setup/ha-k3s-kubernetes-cluster",
+                  "tutorials/infrastructure-setup/ha-rke1-kubernetes-cluster",
+                  "tutorials/infrastructure-setup/ha-rke2-kubernetes-cluster",
+                  "tutorials/infrastructure-setup/nodes-in-amazon-ec2",
+                  "tutorials/infrastructure-setup/mysql-database-in-amazon-rds",
+                  "tutorials/infrastructure-setup/nginx-load-balancer",
+                  "tutorials/infrastructure-setup/amazon-elb-load-balancer",
+                  ],
+        },
+        {
+          type: 'category',
+          label: 'Kubernetes Clusters in Rancher Setup',
+          items: [
                 {
                   type: 'category',
-                  label: 'test-folder',
+                  label: 'Node Requirements for Rancher-Managed Clusters',
                   items: [
-                    "tutorials/authentication/openldap/test-folder/configure-openldap"
-                         ]
+                       "tutorials/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters/node-requirements",
+                         ],
+                },
+                {
+                  type: 'category',
+                  label: 'Checklist for Production-Ready Clusters',
+                  items: [
+                       "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/recommended-cluster-architecture",
+                       "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/roles-for-nodes-in-kubernetes",
+                         ],
                 }
-              ]
-            }    
-                  ]
-        }
-      ],
-      collapsed: true,
-    },
+      ]
+    }
+  ]
+       },
     {
       type: 'category',
       label: 'How-to Guides',
