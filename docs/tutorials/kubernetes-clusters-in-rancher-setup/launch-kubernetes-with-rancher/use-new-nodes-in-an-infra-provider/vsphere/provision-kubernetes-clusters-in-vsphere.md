@@ -1,4 +1,3 @@
 ---
-title: I pray this works
-sidebar_label: page
+title: Provision Kubernetes Clusters in vSphere
 ---

@@ -260,11 +260,85 @@ const sidebars = {
                        "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/recommended-cluster-architecture",
                        "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/roles-for-nodes-in-kubernetes",
                          ],
-                }
-      ]
-    }
-  ]
-       },
+                },
+                {
+                  type: 'category',
+                  label: 'Set Up Clusters from Hosted Kubernetes Providers',
+                  items: [
+                      {
+                        type: 'category',
+                        label: 'Amazon EKS',
+                        items: [
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/amazon-eks/minimum-eks-permissions",
+                               ]
+                      },
+                      {
+                        type: 'category',
+                        label: 'Other Providers',
+                        items: [
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/gke",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/aks",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/alibaba",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/tencent",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/huawei",
+                               ]
+                      }
+                          ]
+                },
+                { 
+                  type: 'category',
+                  label: 'Launch Kubernetes with Rancher',
+                  items: [
+                     {
+                        type: 'category',
+                        label: 'Use New Nodes in an Infra Provider',
+                        items: [
+                            {
+                              type: 'category',
+                              label: 'Amazon EC2',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/amazon-ec2/node-template-configuration",
+                                    ]
+                            },
+                            {
+                              type: 'category',
+                              label: 'DigitalOcean',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/digitalocean/node-template-configuration",
+                                    ]
+                            },   
+                            {
+                              type: 'category',
+                              label: 'Azure',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/azure/node-template-configuration",          
+                                    ]   
+                            },
+                            { 
+                              type: 'category',
+                              label: 'vSphere',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/node-template-configuration",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/provision-kubernetes-clusters-in-vsphere",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/create-credentials",     
+                                      ]
+                            },
+                            {
+                              type: 'category',
+                              label: 'Nutanix',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/node-template-configuration",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/provision-kubernetes-clusters-in-aos",          
+                                     ]
+                              },
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]   
+      },          
     {
       type: 'category',
       label: 'How-to Guides',
