@@ -91,12 +91,61 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/troubleshooting",
                     ],
                   collapsed: true,
-                }
-                   ]
-        }
-      ],
-    collapsed: true,
-    },      
+            },
+            {
+              type: 'category',
+              label: 'Other Installation Methods',
+              items: [      
+                  {
+                    type: 'category',
+                    label: 'Air-Gapped Helm CLI Install',
+                    items: [
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/infrastructure-private-registry",
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/publish-images",
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/install-kubernetes",
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/rancher-ha",    
+                           ]
+                  },
+                  {
+                    type: 'category',
+                    label: 'Rancher on a Single Node with Docker',
+                    items: [
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/http-proxy-configuration",
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/upgrade-docker-installed-rancher",
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/roll-back-docker-installed-rancher",
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/advanced-options",
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/certificate-troubleshooting",
+                           ]
+                  },
+                  { 
+                    type: 'category',
+                    label: 'Rancher Behind an HTTP Proxy',
+                    items: [ 
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/set-up-infrastructure",
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/install-kubernetes",
+                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/install-rancher",
+                           ]
+                          }
+                        ] 
+            },
+            {
+              type: 'category',
+              label: 'Resources',
+              items: [
+                    "getting-started/installation-and-upgrade/resources/choose-a-rancher-version",
+                    "getting-started/installation-and-upgrade/resources/helm-version-requirements",
+                    "getting-started/installation-and-upgrade/resources/add-tls-secrets",
+                    "getting-started/installation-and-upgrade/resources/tls-settings",
+                    "getting-started/installation-and-upgrade/resources/custom-ca-root-certificates",
+                    "getting-started/installation-and-upgrade/resources/upgrade-cert-manager",
+                    "getting-started/installation-and-upgrade/resources/update-private-ca-certificate",
+                    "getting-started/installation-and-upgrade/resources/bootstrap-password",
+                     ],
+            }            
+                      ]
+            }
+          ]
+    },                            
     {
       type: 'category',
       label: 'Tutorials',

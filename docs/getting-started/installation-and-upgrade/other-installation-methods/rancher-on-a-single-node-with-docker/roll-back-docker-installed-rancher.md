@@ -1,3 +1,3 @@
 ---
-title: Dockershim
+title: Roll Back Docker-Installed Rancher
 ---

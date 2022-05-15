@@ -1,3 +1,3 @@
 ---
-title: Dockershim
+title: HTTP Proxy Configuration
 ---

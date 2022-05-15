@@ -1,3 +1,2 @@
 ---
-title: Dockershim
----
+title: Infrastructure Private Registry
