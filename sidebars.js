@@ -31,7 +31,7 @@ const sidebars = {
             "getting-started/introduction/overview",
             "getting-started/introduction/docs-structure",
                  ],
-              collapsed: true,            
+                 collapsed: true,            
         },
         {
           type: 'category',
@@ -58,7 +58,8 @@ const sidebars = {
               items: [      
                     "getting-started/quick-start-guides/deploy-workloads/workload-ingress",
                     "getting-started/quick-start-guides/deploy-workloads/nodeports",
-                           ]
+                     ],
+                     collapsed: true
                   }
               ]
         },
@@ -177,7 +178,7 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/enable-api-audit-log",
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
                            ],
-                        collapsed: true,
+                           collapsed: true,
                  }
               ]
             }
