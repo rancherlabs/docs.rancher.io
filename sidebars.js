@@ -875,11 +875,123 @@ const sidebars = {
     {
       type: 'category',
       label: 'References',
-      items: [
-        "references/architecture",
-        "references/architecture-recommendations",
-        "references/kubernetes-concepts",
-      ],
+      items: [ 
+        {
+          type: 'category',
+          label: 'Rancher Manager Architecture',
+          items: [
+            "references/rancher-manager-architecture/rancher-server-and-components",
+            "references/rancher-manager-architecture/communicating-with-downstream-user-clusters",
+                   ],
+        },
+        {
+          type: 'category',
+          label: 'Architecture Recommendations',
+          items: [
+            "references/architecture-recommendations/recommended-architecture-setup",
+                   ], 
+        },
+        {
+          type: 'category',
+          label: 'Kubernetes Concepts',
+          items: [
+            "references/kubernetes-concepts/overview-of-kubernetes-components",
+                   ],
+        },
+        {
+          type: 'category',
+          label: 'User Settings',
+          items: [
+            "references/user-settings/api-keys",
+            "references/user-settings/manage-node-templates",
+            "references/user-settings/manage-cloud-credentials",
+            "references/user-settings/user-preferences",
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'CLI with Rancher',
+          items: [
+            "references/cli-with-rancher/rancher-cli",
+            "references/cli-with-rancher/kubectl-utility",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'About the API',
+          items: [
+            "references/about-the-api/api-tokens",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Rancher Cluster Tools',
+          items: [
+            "references/rancher-cluster-tools/cluster-logging-monitoring-and-visibility-tools"
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'Rancher Project Tools',
+          items: [
+            "references/rancher-project-tools/project-logging-monitoring-and-visibility-tools"
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'System Tools',
+          items: [
+            "references/system-tools/system-tools"
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'Pipelines',
+          items: [
+            "references/pipelines/concepts",
+            "references/pipelines/pipeline-configuration",
+            "references/pipelines/configure-persistent-data",
+            "references/pipelines/example-repositories",
+            "references/pipelines/example-yaml",
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'Rancher Security',
+          items: [
+            {
+              type: 'category',
+              label: 'Rancher v2.6 Hardening Guides',
+              items: [
+                "references/rancher-security/rancher-v2.6-hardening-guides/hardening-guide-with-cis-v1.6-benchmark",
+                "references/rancher-security/rancher-v2.6-hardening-guides/self-assessment-guide-with-cis-v1.6-benchmark",
+                 ],
+            },
+            {  
+              type: 'category',
+              label: 'SELinux RPM',
+              items: [
+                "references/rancher-security/selinux-rpm/about-rancher-selinux",
+                "references/rancher-security/selinux-rpm/about-rke2-selinux",
+                     ],
+            },
+            {
+              type: 'category',
+              label: 'Kubernetes Security Best Practices',
+              items: [
+                "references/rancher-security/kubernetes-security-best-practices/kubernetes-security",
+                     ],
+            },
+            {
+              type: 'category',
+              label: 'Security Advisories and CVEs',
+              items: [
+                "references/rancher-security/security-advisories-and-cves/published-advisories-and-cves",
+                     ]
+                   }
+                  ]
+                }
+              ],                      
       collapsed: true,
     }
   ]
