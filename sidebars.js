@@ -50,7 +50,8 @@ const sidebars = {
                     "getting-started/quick-start-guides/deploy-rancher-manager/vagrant",
                     "getting-started/quick-start-guides/deploy-rancher-manager/equinix-metal",
                     "getting-started/quick-start-guides/deploy-rancher-manager/helm-cli",
-                     ]
+                     ],
+                collapsed: true,
             },
             {
               type: 'category',
@@ -61,7 +62,7 @@ const sidebars = {
                            ],
                            collapsed: true,
                   }
-                     ]
+              ]
         },
         {
           type: 'category',
@@ -183,8 +184,8 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
                            ],
                            collapsed: true,
-                          }
-                        ]
+                 }
+              ]
             }
           ]
         }
@@ -330,14 +331,82 @@ const sidebars = {
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/node-template-configuration",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/provision-kubernetes-clusters-in-aos",          
                                      ]
-                              },
+                            },
                             ]
-                          }
-                        ]
-                      }
+                          },
+                      {
+                        type: 'category',
+                        label: 'Use Existing Nodes',
+                        items: [
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-existing-nodes/rancher-agent-options",
+                               ]
+                      },
+                      {
+                        type: 'category',
+                        label: 'Use Windows Clusters',
+                        items: [
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-windows-clusters/azure-storageclass-configuration",
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-windows-clusters/windows-linux-cluster-feature-parity",
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-windows-clusters/network-requirements-for-host-gateway",
+                               ]
+                      },
+                      {
+                        type: 'category',
+                        label: 'Set Up Cloud Providers',
+                        items: [
+                            {
+                              type: 'category',
+                              label: 'Other Cloud Providers',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/other-cloud-providers/amazon",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/other-cloud-providers/azure",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/other-cloud-providers/google-compute-engine",
+                                    ]
+                            },
+                            {
+                              type: 'category',
+                              label: 'vSphere',
+                              items: [
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/vsphere/configure-in-tree-vsphere",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/vsphere/configure-out-of-tree-vsphere",
+                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/vsphere/migrate-from-in-tree-to-out-of-tree",
+                                    ]
+                            }
+                         ]
+                      },
+                      {
+                        type: 'category',
+                        label: 'RKE1 Cluster Configuration',
+                        items: [
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/rke1-cluster-configuration/rke1-cluster-config",
+                               ]
+                      },
+                      {
+                        type: 'category',
+                        label: 'RKE1 vs. RKE2 Behavior',
+                        items: [
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/rke1-vs-rke2-behavior/rke1-vs-rke2-differences",
+                               ]
+                      },
+                      {
+                        type: 'category',
+                        label: 'About Rancher Agents',
+                        items: [
+                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/about-rancher-agents/rancher-agents",
+                               ]
+                      },
                     ]
-                  }
-                ]   
+                  },
+                  {
+                    type: 'category',
+                    label: 'Register Existing Clusters',
+                    items: [
+                         "tutorials/kubernetes-clusters-in-rancher-setup/register-existing-clusters/register-existing-clusters",
+                           ],
+                          }
+              ]
+           }
+          ]        
       },          
     {
       type: 'category',

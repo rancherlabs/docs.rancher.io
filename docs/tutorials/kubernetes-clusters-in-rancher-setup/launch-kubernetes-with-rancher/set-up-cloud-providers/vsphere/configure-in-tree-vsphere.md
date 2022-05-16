@@ -1,4 +1,2 @@
 ---
-title: I pray this works
-sidebar_label: page
----
+title: Configure In-Tree vSphere

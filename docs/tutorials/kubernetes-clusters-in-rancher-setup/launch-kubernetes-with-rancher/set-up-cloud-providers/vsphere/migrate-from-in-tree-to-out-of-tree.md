@@ -1,4 +1,3 @@
 ---
-title: I pray this works
-sidebar_label: page
+title: Migrate from In-Tree to Out-of-Tree
 ---
