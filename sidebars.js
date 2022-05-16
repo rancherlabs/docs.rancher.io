@@ -30,8 +30,8 @@ const sidebars = {
             "getting-started/introduction/rancher-manager",
             "getting-started/introduction/overview",
             "getting-started/introduction/docs-structure",
-                 ], 
-            collapsed: true,          
+                 ],
+              collapsed: true,            
         },
         {
           type: 'category',
@@ -50,8 +50,7 @@ const sidebars = {
                     "getting-started/quick-start-guides/deploy-rancher-manager/vagrant",
                     "getting-started/quick-start-guides/deploy-rancher-manager/equinix-metal",
                     "getting-started/quick-start-guides/deploy-rancher-manager/helm-cli",
-                     ],
-                collapsed: true,
+                     ]
             },
             {
               type: 'category',
@@ -59,8 +58,7 @@ const sidebars = {
               items: [      
                     "getting-started/quick-start-guides/deploy-workloads/workload-ingress",
                     "getting-started/quick-start-guides/deploy-workloads/nodeports",
-                           ],
-                           collapsed: true,
+                           ]
                   }
               ]
         },
@@ -75,8 +73,7 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/installation-requirements/install-docker",
                     "getting-started/installation-and-upgrade/installation-requirements/dockershim",
                     "getting-started/installation-and-upgrade/installation-requirements/port-requirements",
-                     ],
-                collapsed: true,
+                     ]
             },
             {
               type: 'category',
@@ -90,8 +87,7 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-aks",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-gke",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/troubleshooting",
-                    ],
-                  collapsed: true,
+                    ]
             },
             {
               type: 'category',
@@ -128,7 +124,6 @@ const sidebars = {
                            ]
                           }
                         ],
-                        collapsed: true, 
             },
             {
               type: 'category',
@@ -157,7 +152,6 @@ const sidebars = {
               items: [
                     "getting-started/installation-and-upgrade/upgrade-kubernetes-without-upgrading-rancher/upgrade-kubernetes-not-rancher",
                      ],
-                  collapsed: true,
             },
             { 
               type: 'category',
@@ -183,11 +177,11 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/enable-api-audit-log",
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
                            ],
-                           collapsed: true,
+                        collapsed: true,
                  }
               ]
             }
-          ]
+          ]  
         }
       ]
     },
@@ -516,6 +510,7 @@ const sidebars = {
                      "tutorials/backup-restore-and-disaster-recovery/configuration-reference/restore-configuration",
                      "tutorials/backup-restore-and-disaster-recovery/configuration-reference/storage-configuration", 
                      ],
+                     collapsed: true,
             }      
                 ]
              },
@@ -814,7 +809,7 @@ const sidebars = {
              "how-to-guides/monitoring-alerting-guides/customize-grafana-dashboard",
              "how-to-guides/monitoring-alerting-guides/create-persistent-grafana-dashboard",
              "how-to-guides/monitoring-alerting-guides/debug-high-memory-usage",
-             "how-to-guides/monitoring-alerting-guides/migrate-to-new-monitoring-solution", 
+             "how-to-guides/monitoring-alerting-guides/migrate-to-rancher-v2.5+-monitoring", 
                      ]
         },
         {
@@ -868,7 +863,8 @@ const sidebars = {
              "how-to-guides/cis-scan-guides/enable-alerting-for-rancher-cis-benchmark",
              "how-to-guides/cis-scan-guides/configure-alerts-for-periodic-scan-on-a-schedule",
              "how-to-guides/cis-scan-guides/create-a-custom-benchmark-version-to-run",
-                  ]
+                  ],
+                  collapsed: true,
                 }
               ]
             },
@@ -993,7 +989,178 @@ const sidebars = {
                 }
               ],                      
       collapsed: true,
-    }
-  ]
+    },
+    {
+      type: 'category',
+      label: 'Integrations in Rancher',
+      items: [ 
+        {
+          type: 'category',
+          label: 'CIS Scans',
+          items: [
+            "integrations-in-rancher/cis-scans/configuration-reference",
+            "integrations-in-rancher/cis-scans/rbac-for-cis-scans",
+            "integrations-in-rancher/cis-scans/skipped-and-not-applicable-tests",
+            "integrations-in-rancher/cis-scans/custom-benchmark",
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'Fleet',
+          items: [
+            "integrations-in-rancher/fleet/gitops-at-scale",
+            "integrations-in-rancher/fleet/architecture",
+            "integrations-in-rancher/fleet/windows-support",
+            "integrations-in-rancher/fleet/use-fleet-behind-a-proxy",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Harvester',
+          items: [
+            "integrations-in-rancher/harvester/about-harvester",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Istio',
+          items: [ 
+            {
+              type: 'category',
+              label: 'About Istio',
+              items: [
+                "integrations-in-rancher/istio/about-istio/cpu-and-memory-allocations",
+                "integrations-in-rancher/istio/about-istio/rbac-for-istio",
+                "integrations-in-rancher/istio/about-istio/disable-istio",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Configuration Options',
+              items: [
+                "integrations-in-rancher/istio/configuration-options/pod-security-policies",
+                "integrations-in-rancher/istio/configuration-options/selectors-and-scrape-configurations",
+                "integrations-in-rancher/istio/configuration-options/install-istio-on-rke2-cluster",
+                "integrations-in-rancher/istio/configuration-options/project-network-isolation",
+                     ]
+                   }
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Longhorn',
+          items: [
+            "integrations-in-rancher/longhorn/about-longhorn-storage",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Logging',
+          items: [ 
+            {
+              type: 'category',
+              label: 'About Logging',
+              items: [
+                "integrations-in-rancher/logging/about-logging/logging-architecture",
+                "integrations-in-rancher/logging/about-logging/migrate-to-rancher-v2.5+-logging",
+                "integrations-in-rancher/logging/about-logging/rbac-for-logging",
+                "integrations-in-rancher/logging/about-logging/logging-helm-chart-options",
+                "integrations-in-rancher/logging/about-logging/taints-and-tolerations",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Custom Resource Configuration',
+              items: [
+                "integrations-in-rancher/logging/custom-resource-configuration/flows-and-clusterflows",
+                "integrations-in-rancher/logging/custom-resource-configuration/outputs-and-clusteroutputs"
+                     ]
+                    }
+                  ]
+        },
+        {
+          type: 'category',
+          label: 'Monitoring and Alerting',
+          items: [
+            "integrations-in-rancher/monitoring-and-alerting/how-monitoring-works",
+            "integrations-in-rancher/monitoring-and-alerting/rbac-for-monitoring",
+            "integrations-in-rancher/monitoring-and-alerting/built-in-dashboards",
+            "integrations-in-rancher/monitoring-and-alerting/windows-support",
+            "integrations-in-rancher/monitoring-and-alerting/promql-expressions",
+            "integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'NeuVector',
+          items: [
+            "integrations-in-rancher/neuvector/about-neuvector",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'OPA Gatekeeper',
+          items: [
+            "integrations-in-rancher/opa-gatekeeper/about-opa-gatekeeper",
+          ],
+          collapsed: true,
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'FAQ',
+      items: [
+        "faq/deprecated-features-in-v2.5",
+        "faq/install-and-configure-kubectl",
+        "faq/dockershim",
+        "faq/technical-items",
+        "faq/security",
+        "faq/telemetry",
+        "faq/container-network-interface-providers",
+        "faq/rancher-is-no-longer-needed",
+      ],
+      collapsed: true,
+    },
+    {
+      type: 'category',
+      label: 'Troubleshooting',
+      items: [ 
+        {
+          type: 'category',
+          label: 'Kubernetes Components',
+          items: [
+            "troubleshooting/kubernetes-components/troubleshooting-etcd-nodes",
+            "troubleshooting/kubernetes-components/troubleshooting-controlplane-nodes",
+            "troubleshooting/kubernetes-components/troubleshooting-nginx-proxy",
+            "troubleshooting/kubernetes-components/troubleshooting-worker-nodes-and-generic-components",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Other Troubleshooting Tips',
+          items: [
+            "troubleshooting/other-troubleshooting-tips/kubernetes-resources",
+            "troubleshooting/other-troubleshooting-tips/networking",
+            "troubleshooting/other-troubleshooting-tips/dns",
+            "troubleshooting/other-troubleshooting-tips/rancher-ha",
+            "troubleshooting/other-troubleshooting-tips/registered-clusters",
+            "troubleshooting/other-troubleshooting-tips/logging",
+            "troubleshooting/other-troubleshooting-tips/user-id-tracking-in-audit-logs",
+            "troubleshooting/other-troubleshooting-tips/expired-webhook-certificate-rotation",
+                 ],
+                 collapsed: true,
+                }
+              ]
+    },
+    {
+      type: 'category',
+      label: 'Contribute to Rancher',
+      items: [
+        "contribute-to-rancher/contribute-to-rancher",
+      ],
+      collapsed: true, 
+    },
+     ]
 }
 module.exports = sidebars;
