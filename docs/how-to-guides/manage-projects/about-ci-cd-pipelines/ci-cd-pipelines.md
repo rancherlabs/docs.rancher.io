@@ -1,4 +1,5 @@
 ---
-title: CI-CD Pipelines
-sidebar: CI/CD Pipelines
+Title: CI-CD Pipelines
 ---
+
+# CI/CD Pipelines

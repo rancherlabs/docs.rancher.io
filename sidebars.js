@@ -533,14 +533,345 @@ const sidebars = {
               type: 'category',
               label: 'About Authentication',
               items: [
-                     "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/manage-users-and-groups",
-                                                
+                {
+                  type: 'category',
+                  label: 'Authentication Config',
+                  items: [
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/manage-users-and-groups",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/create-local-users",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-google-oauth",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-active-directory",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-freeipa",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-azure-ad",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-github",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-keycloak-oidc",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-keycloak-saml",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-pingidentity",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-okta-saml",
                      ]
-                    },
+                },
+                {
+                  type: 'category',
+                  label: 'Configure OpenLDAP',
+                  items: [
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-openldap/openldap-config-reference",
+                         ]
+                },
+                {
+                  type: 'category',
+                  label: 'Configure Microsoft AD Federation Service',
+                  items: [
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service/configure-ms-adfs-for-rancher",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service/configure-rancher-for-ms-adfs",
+                         ]
+                },
+                {
+                  type: 'category',
+                  label: 'Configure Shibboleth',
+                  items: [
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-shibboleth/about-group-permissions",
+                         ]
+                        }
+                      ]
+            },
+            {
+              type: 'category',
+              label: 'Manage Role-Based Access Control',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/global-permissions",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/cluster-and-project-roles",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/custom-roles",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/locked-roles",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'About Provisioning Drivers',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-provisioning-drivers/manage-cluster-drivers",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-provisioning-drivers/manage-node-drivers",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'About RKE1 Templates',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/create-permissions",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/access-or-share-templates",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/manage-rke1-templates",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/enforce-templates",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/override-template-settings",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/apply-templates",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/infrastructure",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/example-use-cases",
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/example-yaml",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Manage Cluster Templates',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-cluster-templates/cluster-templates",
+                  ]
+            },
+            {
+              type: 'category',
+              label: 'Create Pod Security Policies',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/create-pod-security-policies/create-psp",
+                  ]
+            },
+            {
+              type: 'category',
+              label: 'Configure a Global Default Private Registry',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/configure-a-global-default-private-registry/global-default-private-registry",
+                  ]
+            },
+            {
+              type: 'category',
+              label: 'Set Up Custom Branding',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/set-up-custom-branding/custom-branding",
                   ]
                 }
-      collapsed: true,
-    },
+              ]
+        },
+        {
+          type: 'category',
+          label: 'Manage Clusters',
+          items: [
+            {
+              type: 'category',
+              label: 'Access Clusters',
+              items: [
+                     "how-to-guides/manage-clusters/access-clusters/use-kubectl-and-kubeconfig",
+                     "how-to-guides/manage-clusters/access-clusters/authorized-cluster-endpoint",
+                     "how-to-guides/manage-clusters/access-clusters/add-users-to-clusters",
+                     ] 
+            },
+            {
+              type: 'category',
+              label: 'Install Cluster Autoscaler',
+              items: [
+                     "how-to-guides/manage-clusters/install-cluster-autoscaler/use-aws-ec2-auto-scaling-groups",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Configure Clusters',
+              items: [
+                  {
+                    type: 'category',
+                    label: 'Configure Other Clusters',
+                    items: [
+                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-rke1-clusters",
+                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-rke2-clusters",
+                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-k3s-clusters",
+                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-eks-clusters",
+                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-aks-clusters",
+                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/sync-clusters",
+                     ]
+                  },
+                  {
+                    type: 'category',
+                    label: 'Configure GKE Clusters',
+                    items: [
+                     "how-to-guides/manage-clusters/configure-clusters/configure-gke-clusters/gke-private-clusters",
+                     ]
+                    }  
+                  ]
+            },
+            {
+              type: 'category',
+              label: 'Create Kubernetes Persistent Storage',
+              items: [
+                  {
+                    type: 'category',
+                    label: 'Manage Persistent Storage',
+                    items: [
+                     "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/about-persistent-storage",
+                     "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/set-up-existing-storage",
+                     "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/dynamically-provision-new-storage",
+                     "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/use-external-ceph-driver",
+                     "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/about-glusterfs-volumes",
+                     "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/install-iscsi-volumes", 
+                     ]
+                  },
+                  {
+                    type: 'category',
+                    label: 'Provisioning Storage Examples',
+                    items: [
+                      "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/provisioning-storage-examples/persistent-storage-in-amazon-ebs",
+                      "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/provisioning-storage-examples/nfs-storage",
+                      "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/provisioning-storage-examples/vsphere-storage",
+                           ]
+                          }
+                        ]
+            },
+            {
+              type: 'category',
+              label: 'About Projects and Namespaces',
+              items: [
+                "how-to-guides/manage-clusters/about-projects-and-namespaces/projects-and-namespaces",
+                     ]   
+            },
+            {
+              type: 'category',
+              label: 'Clone Cluster Configuration',
+              items: [
+                "how-to-guides/manage-clusters/clone-cluster-configuration/clone-cluster-config",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Rotate Certificates',
+              items: [
+                "how-to-guides/manage-clusters/rotate-certificates/rotate-certificates",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Manage Nodes and Node Pools',
+              items: [
+                "how-to-guides/manage-clusters/manage-nodes-and-node-pools/nodes-and-node-pools",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Clean Cluster Nodes',
+              items: [
+                "how-to-guides/manage-clusters/clean-cluster-nodes/clean-cluster-nodes", 
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Add a Pod Security Policy',
+              items: [
+                "how-to-guides/manage-clusters/add-a-pod-security-policy/add-psp", 
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Assign Pod Security Policies',
+              items: [
+                "how-to-guides/manage-clusters/assign-pod-security-policies/assign-psp", 
+                     ]
+                   }
+                  ]
+        },
+        {
+          type: 'category',
+          label: 'Manage Projects',
+          items: [
+            {
+              type: 'category',
+              label: 'Add Users to Projects',
+              items: [
+                  "how-to-guides/manage-projects/add-users-to-projects/add-users-to-projects",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Manage Namespaces',
+              items: [
+                 "how-to-guides/manage-projects/manage-namespaces/manage-namespaces",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'About CI/CD Pipelines',
+              items: [
+                 "how-to-guides/manage-projects/about-ci-cd-pipelines/ci-cd-pipelines",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Manage Pod Security Policies',
+              items: [
+                 "how-to-guides/manage-projects/manage-pod-security-policies/manage-psp",
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Manage Project Resource Quotas',
+              items: [
+                 "how-to-guides/manage-projects/manage-project-resource-quotas/about-project-resource-quotas",
+                 "how-to-guides/manage-projects/manage-project-resource-quotas/override-default-limit-in-namespaces",
+                 "how-to-guides/manage-projects/manage-project-resource-quotas/set-container-default-resource-limits",
+                 "how-to-guides/manage-projects/manage-project-resource-quotas/resource-quota-types",
+                     ]
+                    }
+                  ]
+        },
+        {
+          type: 'category',
+          label: 'Monitoring/Alerting Guides',
+          items: [
+             "how-to-guides/monitoring-alerting-guides/enable-monitoring",
+             "how-to-guides/monitoring-alerting-guides/uninstall-monitoring", 
+             "how-to-guides/monitoring-alerting-guides/set-up-monitoring-for-workloads",
+             "how-to-guides/monitoring-alerting-guides/customize-grafana-dashboard",
+             "how-to-guides/monitoring-alerting-guides/create-persistent-grafana-dashboard",
+             "how-to-guides/monitoring-alerting-guides/debug-high-memory-usage",
+             "how-to-guides/monitoring-alerting-guides/migrate-to-new-monitoring-solution", 
+                     ]
+        },
+        {
+          type: 'category',
+          label: 'Monitoring V2 Configuration Guides',
+          items: [
+            {
+              type: 'category',
+              label: 'General Configuration',
+              items: [
+                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/receivers",
+                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/routes",
+                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/servicemonitors-and-podmonitors",
+                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/helm-chart-options",
+                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/examples",
+                     ] 
+            },
+            {
+              type: 'category',
+              label: 'Advanced Configuration',
+              items: [
+                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/alertmanager",
+                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/prometheus",
+                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/prometheusrules",
+                     ]
+                    } 
+                  ]
+        },
+        {
+          type: 'category',
+          label: 'Istio Setup Guide',
+          items: [
+             "how-to-guides/istio-setup-guide/enable-istio-in-cluster",
+             "how-to-guides/istio-setup-guide/enable-istio-in-namespace",
+             "how-to-guides/istio-setup-guide/use-istio-sidecar",
+             "how-to-guides/istio-setup-guide/set-up-istio-gateway",
+             "how-to-guides/istio-setup-guide/set-up-traffic-management",
+             "how-to-guides/istio-setup-guide/generate-and-view-traffic",
+          ]
+        },
+        {
+          type: 'category',
+          label: 'CIS Scan Guides',
+          items: [
+             "how-to-guides/cis-scan-guides/install-rancher-cis-benchmark",
+             "how-to-guides/cis-scan-guides/uninstall-rancher-cis-benchmark",
+             "how-to-guides/cis-scan-guides/run-a-scan",
+             "how-to-guides/cis-scan-guides/run-a-scan-periodically-on-a-schedule",
+             "how-to-guides/cis-scan-guides/skip-tests",
+             "how-to-guides/cis-scan-guides/view-reports",
+             "how-to-guides/cis-scan-guides/enable-alerting-for-rancher-cis-benchmark",
+             "how-to-guides/cis-scan-guides/configure-alerts-for-periodic-scan-on-a-schedule",
+             "how-to-guides/cis-scan-guides/create-a-custom-benchmark-version-to-run",
+                  ]
+                }
+              ]
+            },
     {
       type: 'category',
       label: 'References',
