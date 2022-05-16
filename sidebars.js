@@ -405,15 +405,140 @@ const sidebars = {
                            ],
                           }
               ]
-           }
-          ]        
-      },          
+           },
+        {
+          type: 'category',
+          label: 'Kubernetes Resources Setup',
+          items: [
+            {
+              type: 'category',
+              label: 'About Workloads and Pods',
+              items: [
+                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/deploy-workloads",
+                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/roll-back-workloads",
+                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/upgrade-workloads",
+                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/add-a-sidecar",                            
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Horizontal Pod Autoscaler',
+              items: [
+                     "tutorials/kubernetes-resources-setup/horizontal-pod-autoscaler/about-hpas",
+                     "tutorials/kubernetes-resources-setup/horizontal-pod-autoscaler/manage-hpas-with-ui",
+                     "tutorials/kubernetes-resources-setup/horizontal-pod-autoscaler/manage-hpas-with-kubectl",
+                     "tutorials/kubernetes-resources-setup/horizontal-pod-autoscaler/test-hpas-with-kubectl",                            
+                     ]
+                    },
+            {
+              type: 'category',
+              label: 'Load Balancer and Ingress Controller',
+              items: [
+                     "tutorials/kubernetes-resources-setup/load-balancer-and-ingress-controller/layer-4-and-layer-7-load-balancing",
+                     "tutorials/kubernetes-resources-setup/load-balancer-and-ingress-controller/add-ingresses",
+                     "tutorials/kubernetes-resources-setup/load-balancer-and-ingress-controller/configure-ingresses",                           
+                     ]
+            },                  
+              {
+              type: 'category',
+              label: 'Create Services',
+              items: [
+                     "tutorials/kubernetes-resources-setup/create-services/create-services", 
+                     ],
+            },
+             {
+              type: 'category',
+              label: 'Encrypt HTTP Communication',
+              items:  [
+                      "tutorials/kubernetes-resources-setup/encrypt-http-communication/encrypt-http-communication", 
+                      ],
+            },
+            {
+              type: 'category',
+              label: 'Work with ConfigMaps',
+              items: [
+                     "tutorials/kubernetes-resources-setup/work-with-configmaps/configmaps", 
+                     ],
+            },
+            {
+              type: 'category',
+              label: 'About Secrets',
+              items: [
+                     "tutorials/kubernetes-resources-setup/about-secrets/secrets", 
+                     ],
+            },
+            {
+              type: 'category',
+              label: 'Use Kubernetes and Docker Registries',
+              items: [
+                     "tutorials/kubernetes-resources-setup/use-kubernetes-and-docker-registries/kubernetes-and-docker-registries", 
+                     ],
+                    }
+                  ]
+        },
+        {
+          type: 'category',
+          label: 'Helm Charts in Rancher',
+          items: [
+                 "tutorials/helm-charts-in-rancher/create-apps",                            
+                     ]
+        },
+        {
+          type: 'category',
+          label: 'Deploy Apps Across Clusters',
+          items: [
+                 "tutorials/deploy-apps-across-clusters/fleet",
+                 "tutorials/deploy-apps-across-clusters/multi-cluster-apps",                            
+                     ]
+        },
+        {
+          type: 'category',
+          label: 'Backup, Restore, and Disaster Recovery',
+          items: [
+            {
+              type: 'category',
+              label: 'Back Up/Restore Options',
+              items: [
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/back-up-rancher",
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/restore-rancher",
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/migrate-rancher-to-new-cluster",
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/back-up-docker-installed-rancher",
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/restore-docker-installed-rancher",
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/back-up-rancher-launched-kubernetes-clusters",
+                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/restore-rancher-launched-kubernetes-clusters-from-backup",                         
+                     ]
+            },
+            {
+              type: 'category',
+              label: 'Configuration Reference',
+              items: [
+                     "tutorials/backup-restore-and-disaster-recovery/configuration-reference/backup-configuration",
+                     "tutorials/backup-restore-and-disaster-recovery/configuration-reference/restore-configuration",
+                     "tutorials/backup-restore-and-disaster-recovery/configuration-reference/storage-configuration", 
+                     ],
+            }      
+                ]
+             },
+            ]
+          },
     {
       type: 'category',
       label: 'How-to Guides',
-      items: [
-        "how-to-guides/api",
-      ],
+      items: [ 
+        {
+          type: 'category',
+          label: 'Authentication, Permissions, and Global Configuration',
+          items: [
+            {
+              type: 'category',
+              label: 'About Authentication',
+              items: [
+                     "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/manage-users-and-groups",
+                                                
+                     ]
+                    },
+                  ]
+                }
       collapsed: true,
     },
     {

@@ -1,4 +1,3 @@
 ---
-title: I pray this works
-sidebar_label: page
+title: Manage HPAs with UI
 ---

@@ -1,4 +1,3 @@
 ---
-title: I pray this works
-sidebar_label: page
+title: Restore Rancher-Launched Kubernetes Clusters from Backup
 ---
