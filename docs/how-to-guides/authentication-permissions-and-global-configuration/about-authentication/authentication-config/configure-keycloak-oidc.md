@@ -1,3 +1,5 @@
 ---
-title: Configure Keycloak OIDC
+Title: Configure Keycloak OIDC
 ---
+
+# Configure Keycloak (OIDC)

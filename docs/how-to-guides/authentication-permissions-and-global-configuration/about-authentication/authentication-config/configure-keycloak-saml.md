@@ -1,3 +1,5 @@
 ---
-title: Configure Keycloak SAML
+Title: Configure Keycloak SAML
 ---
+
+# Configure Keycloak (SAML)

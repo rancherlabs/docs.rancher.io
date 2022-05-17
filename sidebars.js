@@ -555,29 +555,29 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'Configure Microsoft AD Federation Service',
+                  label: 'Configure Microsoft AD Federation Service (SAML)',
                   items: [
-                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service/configure-ms-adfs-for-rancher",
-                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service/configure-rancher-for-ms-adfs",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service-saml/configure-ms-adfs-for-rancher",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service-saml/configure-rancher-for-ms-adfs",
                          ]
                 },
                 {
                   type: 'category',
-                  label: 'Configure Shibboleth',
+                  label: 'Configure Shibboleth (SAML)',
                   items: [
-                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-shibboleth/about-group-permissions",
+                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-shibboleth-saml/about-group-permissions",
                          ]
                         }
                       ]
             },
             {
               type: 'category',
-              label: 'Manage Role-Based Access Control',
+              label: 'Manage Role-Based Access Control (RBAC)',
               items: [
-                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/global-permissions",
-                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/cluster-and-project-roles",
-                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/custom-roles",
-                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control/locked-roles",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/global-permissions",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/cluster-and-project-roles",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/custom-roles",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/locked-roles",
                      ]
             },
             {

@@ -1,3 +1,5 @@
 ---
-title: Windows Linux Cluster Feature Parity
+Title: Windows Linux Cluster Feature Parity
 ---
+
+# Windows/Linux Cluster Feature Parity

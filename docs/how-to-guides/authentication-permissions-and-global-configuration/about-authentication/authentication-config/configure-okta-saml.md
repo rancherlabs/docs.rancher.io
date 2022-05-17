@@ -1,3 +1,5 @@
 ---
-title: Configure Okta SAML
+Title: Configure Okta SAML
 ---
+
+# Configure Okta (SAML)
