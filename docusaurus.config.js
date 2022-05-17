@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Rancher Manager Docs',
-  tagline: 'Rancher Manager Docs',
-  url: 'https://rancher.com/docs',
+  title: 'Rancher Desktop Docs',
+  tagline: 'Rancher Desktop Docs',
+  url: 'https://docs.rancherdesktop.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -25,7 +25,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/jtravee/docs.rancherdesktop.io/tree/RM-Demo',
+          editUrl: 'https://github.com/rancher-sandbox/docs.rancherdesktop.io/edit/main',
         },
         blog: false,
         theme: {
@@ -40,18 +40,18 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Rancher Manager Logo',
+          alt: 'Rancher Desktop Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            href: 'https://rancher.com/docs',
-            label: 'Rancher Manager Home',
+            href: 'https://rancherdesktop.io/',
+            label: 'Rancher Desktop Home',
             target: '_self',
             position: 'right',
           },
           {
-            href: 'https://github.com/jtravee/docs.rancherdesktop.io/tree/RM-Demo',
+            href: 'https://github.com/rancher-sandbox/docs.rancherdesktop.io/',
             label: 'GitHub',
             position: 'right',
           },
@@ -59,11 +59,11 @@ const config = {
       },
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: false,
+        disableSwitch: true,
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} SUSE. Rancher Manager is an open source project of the SUSE Rancher Engineering group. This docs site is built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SUSE. Rancher Desktop is an open source project of the SUSE Rancher Engineering group. This docs site is built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
