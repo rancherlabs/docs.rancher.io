@@ -18,16 +18,16 @@ const sidebars = {
 
   // But you can create a sidebar manually
   tutorialSidebar: [
-    {
+   
+      'rancher-manager',             
+    {    
       type: 'category',
       label: 'Getting Started', 
       items: [
         {
           type: 'category',
           label: 'Introduction',
-          collapsed: true,
           items: [
-            "getting-started/introduction/rancher-manager",
             "getting-started/introduction/overview",
             "getting-started/introduction/docs-structure",
                  ],            
@@ -58,7 +58,6 @@ const sidebars = {
                     "getting-started/quick-start-guides/deploy-workloads/workload-ingress",
                     "getting-started/quick-start-guides/deploy-workloads/nodeports",
                      ],
-                     collapsed: true
                   }
               ]
         },
@@ -177,7 +176,6 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/enable-api-audit-log",
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
                            ],
-                           collapsed: true,
                  }
               ]
             }
@@ -510,7 +508,6 @@ const sidebars = {
                      "tutorials/backup-restore-and-disaster-recovery/configuration-reference/restore-configuration",
                      "tutorials/backup-restore-and-disaster-recovery/configuration-reference/storage-configuration", 
                      ],
-                     collapsed: true,
             }      
                 ]
              },
@@ -864,7 +861,6 @@ const sidebars = {
              "how-to-guides/cis-scan-guides/configure-alerts-for-periodic-scan-on-a-schedule",
              "how-to-guides/cis-scan-guides/create-a-custom-benchmark-version-to-run",
                   ],
-                  collapsed: true,
                 }
               ]
             },
@@ -988,7 +984,6 @@ const sidebars = {
                   ]
                 }
               ],                      
-      collapsed: true,
     },
     {
       type: 'category',
@@ -1103,7 +1098,6 @@ const sidebars = {
           items: [
             "integrations-in-rancher/opa-gatekeeper/about-opa-gatekeeper",
           ],
-          collapsed: true,
         }
       ]
     },
@@ -1120,7 +1114,6 @@ const sidebars = {
         "faq/container-network-interface-providers",
         "faq/rancher-is-no-longer-needed",
       ],
-      collapsed: true,
     },
     {
       type: 'category',
@@ -1149,7 +1142,6 @@ const sidebars = {
             "troubleshooting/other-troubleshooting-tips/user-id-tracking-in-audit-logs",
             "troubleshooting/other-troubleshooting-tips/expired-webhook-certificate-rotation",
                  ],
-                 collapsed: true,
                 }
               ]
     },
@@ -1159,7 +1151,6 @@ const sidebars = {
       items: [
         "contribute-to-rancher/contribute-to-rancher",
       ],
-      collapsed: true, 
     },
      ]
 }
