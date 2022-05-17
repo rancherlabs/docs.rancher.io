@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Rancher Desktop Docs',
-  tagline: 'Rancher Desktop Docs',
-  url: 'https://docs.rancherdesktop.io',
+  title: 'Rancher Manager Docs',
+  tagline: 'Rancher Manager Docs',
+  url: 'https://rancher.com/docs',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -25,7 +25,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/rancher-sandbox/docs.rancherdesktop.io/edit/main',
+          editUrl: 'https://github.com/jtravee/docs.rancherdesktop.io/tree/RM-Demo',
         },
         blog: false,
         theme: {
@@ -40,18 +40,18 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Rancher Desktop Logo',
+          alt: 'Rancher Manager Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            href: 'https://rancherdesktop.io/',
-            label: 'Rancher Desktop Home',
+            href: 'https://rancher.com/docs',
+            label: 'Rancher Manager Home',
             target: '_self',
             position: 'right',
           },
           {
-            href: 'https://github.com/rancher-sandbox/docs.rancherdesktop.io/',
+            href: 'https://github.com/jtravee/docs.rancherdesktop.io/tree/RM-Demo',
             label: 'GitHub',
             position: 'right',
           },
@@ -63,7 +63,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} SUSE. Rancher Desktop is an open source project of the SUSE Rancher Engineering group. This docs site is built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SUSE. Rancher Manager is an open source project of the SUSE Rancher Engineering group. This docs site is built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
