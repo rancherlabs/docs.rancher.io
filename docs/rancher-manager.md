@@ -3,6 +3,8 @@ title: Rancher Manager
 slug: /
 ---
 
+>**Note: This is not a complete description of RM; partially filled in for landing page purposes.**
+
 Rancher was originally built to work with multiple orchestrators, and it included its own orchestrator called Cattle. With the rise of Kubernetes in the marketplace, Rancher 2 exclusively deploys and manages Kubernetes clusters running anywhere, on any provider.
 
 Rancher can provision Kubernetes from a hosted provider, provision compute nodes and then install Kubernetes onto them, or import existing Kubernetes clusters running anywhere.
