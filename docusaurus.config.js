@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Rancher Manager Docs',
   tagline: 'Rancher Manager Docs',
-  url: '/',
+  url: 'https://rancher.com/docs/rancher/v2.6/en/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
