@@ -873,10 +873,9 @@ const sidebars = {
                 "reference-guides/cluster-configuration/rancher-server/aks-cluster-configuration",
                 {
                   type: 'category',
-                  label: 'GKE Cluster Configuration',
+                  label: 'GKE',
                   items: [
-                    "reference-guides/cluster-configuration/rancher-server/gke-cluster-configuration/gke-cluster-configuration",
-                    "reference-guides/cluster-configuration/rancher-server/gke-cluster-configuration/gke-private-clusters",
+                    "reference-guides/cluster-configuration/rancher-server/gke/gke-private-clusters",
                   ]
           },
                 "reference-guides/cluster-configuration/rancher-server/sync-clusters",
