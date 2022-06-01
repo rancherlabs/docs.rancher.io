@@ -29,7 +29,7 @@ const sidebars = {
           label: 'Introduction',
           items: [
             "getting-started/introduction/overview",
-            "getting-started/introduction/docs-structure",
+            "getting-started/introduction/what-are-divio-docs",
                  ],            
         },
         {
@@ -651,31 +651,6 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Configure Clusters',
-              items: [
-                  {
-                    type: 'category',
-                    label: 'Configure Other Clusters',
-                    items: [
-                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-rke1-clusters",
-                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-rke2-clusters",
-                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-k3s-clusters",
-                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-eks-clusters",
-                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/configure-aks-clusters",
-                     "how-to-guides/manage-clusters/configure-clusters/configure-other-clusters/sync-clusters",
-                     ]
-                  },
-                  {
-                    type: 'category',
-                    label: 'Configure GKE Clusters',
-                    items: [
-                     "how-to-guides/manage-clusters/configure-clusters/configure-gke-clusters/gke-private-clusters",
-                     ]
-                    }  
-                  ]
-            },
-            {
-              type: 'category',
               label: 'Create Kubernetes Persistent Storage',
               items: [
                   {
@@ -866,85 +841,138 @@ const sidebars = {
             },
     {
       type: 'category',
-      label: 'References',
+      label: 'Reference Guides',
       items: [ 
         {
           type: 'category',
           label: 'Rancher Manager Architecture',
           items: [
-            "references/rancher-manager-architecture/rancher-server-and-components",
-            "references/rancher-manager-architecture/communicating-with-downstream-user-clusters",
+            "reference-guides/rancher-manager-architecture/rancher-server-and-components",
+            "reference-guides/rancher-manager-architecture/communicating-with-downstream-user-clusters",
                    ],
         },
         {
           type: 'category',
           label: 'Architecture Recommendations',
           items: [
-            "references/architecture-recommendations/recommended-architecture-setup",
+            "reference-guides/architecture-recommendations/recommended-architecture-setup",
                    ], 
         },
         {
           type: 'category',
+          label: 'Cluster Configuration',
+          items: [
+            {
+              type: 'category',
+              label: 'Rancher Server',
+              items: [
+                "reference-guides/cluster-configuration/rancher-server/rke1-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server/rke2-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server/k3s-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server/eks-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server/aks-cluster-configuration",
+                {
+                  type: 'category',
+                  label: 'GKE Cluster Configuration',
+                  items: [
+                    "reference-guides/cluster-configuration/rancher-server/gke-cluster-configuration/gke-cluster-configuration",
+                    "reference-guides/cluster-configuration/rancher-server/gke-cluster-configuration/gke-private-clusters",
+                  ]
+          },
+                "reference-guides/cluster-configuration/rancher-server/sync-clusters",
+
+                      ]
+                  },
+            {
+              type: 'category',
+              label: 'Downstream Clusters',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Node Template Configuration',
+                  items: [ 
+                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/amazon-ec2",
+                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/digitalocean",
+                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/azure", 
+                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/vsphere",
+                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/nutanix",
+                          ]
+                },
+                {
+                  type: 'category',
+                  label: 'Machine Configuration',
+                  items: [ 
+                    "reference-guides/cluster-configuration/downstream-clusters/machine-configuration/amazon-ec2",
+                    "reference-guides/cluster-configuration/downstream-clusters/machine-configuration/digitalocean",
+                    "reference-guides/cluster-configuration/downstream-clusters/machine-configuration/azure", 
+                         ]
+                        }
+                      ]
+                    }
+                  ]
+                },  
+        {
+          type: 'category',
           label: 'Kubernetes Concepts',
           items: [
-            "references/kubernetes-concepts/overview-of-kubernetes-components",
+            "reference-guides/kubernetes-concepts/overview-of-kubernetes-components",
                    ],
         },
         {
           type: 'category',
           label: 'User Settings',
           items: [
-            "references/user-settings/api-keys",
-            "references/user-settings/manage-node-templates",
-            "references/user-settings/manage-cloud-credentials",
-            "references/user-settings/user-preferences",
+            "reference-guides/user-settings/api-keys",
+            "reference-guides/user-settings/manage-node-templates",
+            "reference-guides/user-settings/manage-cloud-credentials",
+            "reference-guides/user-settings/user-preferences",
                  ],
         },
         {
           type: 'category',
           label: 'CLI with Rancher',
           items: [
-            "references/cli-with-rancher/rancher-cli",
-            "references/cli-with-rancher/kubectl-utility",
+            "reference-guides/cli-with-rancher/rancher-cli",
+            "reference-guides/cli-with-rancher/kubectl-utility",
                  ]
         },
         {
           type: 'category',
           label: 'About the API',
           items: [
-            "references/about-the-api/api-tokens",
+            "reference-guides/about-the-api/api-tokens",
                  ]
         },
         {
           type: 'category',
           label: 'Rancher Cluster Tools',
           items: [
-            "references/rancher-cluster-tools/cluster-logging-monitoring-and-visibility-tools"
+            "reference-guides/rancher-cluster-tools/cluster-logging-monitoring-and-visibility-tools"
                  ],
         },
         {
           type: 'category',
           label: 'Rancher Project Tools',
           items: [
-            "references/rancher-project-tools/project-logging-monitoring-and-visibility-tools"
+            "reference-guides/rancher-project-tools/project-logging-monitoring-and-visibility-tools"
                  ],
         },
         {
           type: 'category',
           label: 'System Tools',
           items: [
-            "references/system-tools/system-tools"
+            "reference-guides/system-tools/system-tools"
                  ],
         },
         {
           type: 'category',
           label: 'Pipelines',
           items: [
-            "references/pipelines/concepts",
-            "references/pipelines/pipeline-configuration",
-            "references/pipelines/configure-persistent-data",
-            "references/pipelines/example-repositories",
-            "references/pipelines/example-yaml",
+            "reference-guides/pipelines/concepts",
+            "reference-guides/pipelines/pipeline-configuration",
+            "reference-guides/pipelines/configure-persistent-data",
+            "reference-guides/pipelines/example-repositories",
+            "reference-guides/pipelines/example-yaml",
                  ],
         },
         {
@@ -955,36 +983,43 @@ const sidebars = {
               type: 'category',
               label: 'Rancher v2.6 Hardening Guides',
               items: [
-                "references/rancher-security/rancher-v2.6-hardening-guides/hardening-guide-with-cis-v1.6-benchmark",
-                "references/rancher-security/rancher-v2.6-hardening-guides/self-assessment-guide-with-cis-v1.6-benchmark",
+                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/hardening-guide-with-cis-v1.6-benchmark",
+                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/self-assessment-guide-with-cis-v1.6-benchmark",
                  ],
             },
             {  
               type: 'category',
               label: 'SELinux RPM',
               items: [
-                "references/rancher-security/selinux-rpm/about-rancher-selinux",
-                "references/rancher-security/selinux-rpm/about-rke2-selinux",
+                "reference-guides/rancher-security/selinux-rpm/about-rancher-selinux",
+                "reference-guides/rancher-security/selinux-rpm/about-rke2-selinux",
                      ],
             },
             {
               type: 'category',
               label: 'Kubernetes Security Best Practices',
               items: [
-                "references/rancher-security/kubernetes-security-best-practices/kubernetes-security",
+                "reference-guides/rancher-security/kubernetes-security-best-practices/kubernetes-security",
                      ],
             },
             {
               type: 'category',
               label: 'Security Advisories and CVEs',
               items: [
-                "references/rancher-security/security-advisories-and-cves/published-advisories-and-cves",
+                "reference-guides/rancher-security/security-advisories-and-cves/published-advisories-and-cves",
                      ]
                    }
-                  ]
+                  ],
                 }
-              ],                      
-    },
+              ]
+            },
+    {    
+      type: 'category',
+      label: 'Explanations', 
+      items: [
+        "explanations/sample",
+                           ],
+    },                                                       
     {
       type: 'category',
       label: 'Integrations in Rancher',
