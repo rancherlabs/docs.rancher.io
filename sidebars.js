@@ -35,10 +35,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'Quick Start Guides',
+          link: {
+            type: 'doc',
+            id: "quick-start-guides",
+          },
           items: [
             {
               type: 'category',
               label: 'Deploy Rancher Manager',
+              link: {
+                type: 'doc',
+                id: "deploy-rancher-manager",
+             },
               items: [
                     "getting-started/quick-start-guides/deploy-rancher-manager/aws-with-terraform",
                     "getting-started/quick-start-guides/deploy-rancher-manager/aws-with-eks",
@@ -49,11 +57,15 @@ const sidebars = {
                     "getting-started/quick-start-guides/deploy-rancher-manager/vagrant",
                     "getting-started/quick-start-guides/deploy-rancher-manager/equinix-metal",
                     "getting-started/quick-start-guides/deploy-rancher-manager/helm-cli",
-                     ]
+              ]
             },
             {
               type: 'category',
               label: 'Deploy Rancher Workloads',
+              link: {
+                type: 'doc',
+                id: "deploy-rancher-workloads",
+              },
               items: [      
                     "getting-started/quick-start-guides/deploy-workloads/workload-ingress",
                     "getting-started/quick-start-guides/deploy-workloads/nodeports",
@@ -64,10 +76,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'Installation and Upgrade',
-          items: [
+          link: {
+            type: 'doc',
+            id: "installation-and-upgrade",
+            },
+            items: [
             {
               type: 'category',
               label: 'Installation Requirements',
+              link: {
+                type: 'doc',
+                id: "installation-requirements",
+              },
               items: [
                     "getting-started/installation-and-upgrade/installation-requirements/install-docker",
                     "getting-started/installation-and-upgrade/installation-requirements/dockershim",
@@ -77,6 +97,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Install/Upgrade on a Kubernetes Cluster',
+              link: {
+                type: 'doc',
+                id: "install-upgrade-on-a-kubernetes-cluster",
+              },
               items: [      
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rollbacks",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/upgrades",
@@ -90,6 +114,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Other Installation Methods',
+              link: {
+                type: 'doc',
+                id: "other-installation-methods",
+              },
               items: [      
                   {
                     type: 'category',

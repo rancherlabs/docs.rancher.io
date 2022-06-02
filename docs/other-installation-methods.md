@@ -1,0 +1,3 @@
+---
+title: Other Installation Methods
+---
