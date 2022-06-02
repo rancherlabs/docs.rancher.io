@@ -78,7 +78,6 @@ const sidebars = {
               type: 'category',
               label: 'Install/Upgrade on a Kubernetes Cluster',
               items: [      
-                    "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/helm-chart-options",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rollbacks",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/upgrades",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/air-gapped-upgrades",
@@ -106,10 +105,8 @@ const sidebars = {
                     type: 'category',
                     label: 'Rancher on a Single Node with Docker',
                     items: [
-                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/http-proxy-configuration",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/upgrade-docker-installed-rancher",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/roll-back-docker-installed-rancher",
-                          "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/advanced-options",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/certificate-troubleshooting",
                            ]
                   },
@@ -131,7 +128,6 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/resources/choose-a-rancher-version",
                     "getting-started/installation-and-upgrade/resources/helm-version-requirements",
                     "getting-started/installation-and-upgrade/resources/add-tls-secrets",
-                    "getting-started/installation-and-upgrade/resources/tls-settings",
                     "getting-started/installation-and-upgrade/resources/custom-ca-root-certificates",
                     "getting-started/installation-and-upgrade/resources/upgrade-cert-manager",
                     "getting-started/installation-and-upgrade/resources/update-private-ca-certificate",
@@ -161,7 +157,6 @@ const sidebars = {
                     label: 'Enable Experimental Features',
                     items: [
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/rancher-on-arm64",
-                          "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/feature-flags",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/unsupported-storage-drivers",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/istio-traffic-management-features",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/continuous-delivery",
@@ -177,11 +172,11 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
                            ],
                  }
-              ]
-            }
-          ]  
-        }
-      ]
+                ]
+              }
+            ]
+          }
+        ]
     },
     {
       type: 'category',
@@ -258,25 +253,14 @@ const sidebars = {
                   type: 'category',
                   label: 'Set Up Clusters from Hosted Kubernetes Providers',
                   items: [
-                      {
-                        type: 'category',
-                        label: 'Amazon EKS',
-                        items: [
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/amazon-eks/minimum-eks-permissions",
-                               ]
-                      },
-                      {
-                        type: 'category',
-                        label: 'Other Providers',
-                        items: [
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/gke",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/aks",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/alibaba",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/tencent",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/other-providers/huawei",
-                               ]
-                      }
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/gke",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/aks",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/alibaba",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/tencent",
+                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/huawei",
                           ]
+                      }
+                   ]
                 },
                 { 
                   type: 'category',
@@ -288,30 +272,8 @@ const sidebars = {
                         items: [
                             {
                               type: 'category',
-                              label: 'Amazon EC2',
-                              items: [
-                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/amazon-ec2/node-template-configuration",
-                                    ]
-                            },
-                            {
-                              type: 'category',
-                              label: 'DigitalOcean',
-                              items: [
-                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/digitalocean/node-template-configuration",
-                                    ]
-                            },   
-                            {
-                              type: 'category',
-                              label: 'Azure',
-                              items: [
-                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/azure/node-template-configuration",          
-                                    ]   
-                            },
-                            { 
-                              type: 'category',
                               label: 'vSphere',
                               items: [
-                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/node-template-configuration",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/provision-kubernetes-clusters-in-vsphere",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/create-credentials",     
                                       ]
@@ -320,18 +282,10 @@ const sidebars = {
                               type: 'category',
                               label: 'Nutanix',
                               items: [
-                                "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/node-template-configuration",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/provision-kubernetes-clusters-in-aos",          
                                      ]
                             },
                             ]
-                          },
-                      {
-                        type: 'category',
-                        label: 'Use Existing Nodes',
-                        items: [
-                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-existing-nodes/rancher-agent-options",
-                               ]
                       },
                       {
                         type: 'category',
@@ -368,13 +322,6 @@ const sidebars = {
                       },
                       {
                         type: 'category',
-                        label: 'RKE1 Cluster Configuration',
-                        items: [
-                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/rke1-cluster-configuration/rke1-cluster-config",
-                               ]
-                      },
-                      {
-                        type: 'category',
                         label: 'RKE1 vs. RKE2 Behavior',
                         items: [
                            "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/rke1-vs-rke2-behavior/rke1-vs-rke2-differences",
@@ -395,9 +342,7 @@ const sidebars = {
                     items: [
                          "tutorials/kubernetes-clusters-in-rancher-setup/register-existing-clusters/register-existing-clusters",
                            ],
-                          }
-              ]
-           },
+        },
         {
           type: 'category',
           label: 'Kubernetes Resources Setup',
@@ -487,30 +432,15 @@ const sidebars = {
           type: 'category',
           label: 'Backup, Restore, and Disaster Recovery',
           items: [
-            {
-              type: 'category',
-              label: 'Back Up/Restore Options',
-              items: [
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/back-up-rancher",
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/restore-rancher",
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/migrate-rancher-to-new-cluster",
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/back-up-docker-installed-rancher",
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/restore-docker-installed-rancher",
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/back-up-rancher-launched-kubernetes-clusters",
-                     "tutorials/backup-restore-and-disaster-recovery/backup-restore-options/restore-rancher-launched-kubernetes-clusters-from-backup",                         
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Configuration Reference',
-              items: [
-                     "tutorials/backup-restore-and-disaster-recovery/configuration-reference/backup-configuration",
-                     "tutorials/backup-restore-and-disaster-recovery/configuration-reference/restore-configuration",
-                     "tutorials/backup-restore-and-disaster-recovery/configuration-reference/storage-configuration", 
-                     ],
-            }      
+            "tutorials/backup-restore-and-disaster-recovery/back-up-rancher",
+            "tutorials/backup-restore-and-disaster-recovery/restore-rancher",
+            "tutorials/backup-restore-and-disaster-recovery/migrate-rancher-to-new-cluster",
+            "tutorials/backup-restore-and-disaster-recovery/back-up-docker-installed-rancher",
+            "tutorials/backup-restore-and-disaster-recovery/restore-docker-installed-rancher",
+            "tutorials/backup-restore-and-disaster-recovery/back-up-rancher-launched-kubernetes-clusters",
+            "tutorials/backup-restore-and-disaster-recovery/restore-rancher-launched-kubernetes-clusters-from-backup",                            
                 ]
-             },
+              }
             ]
           },
     {
@@ -541,13 +471,6 @@ const sidebars = {
                          "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-pingidentity",
                          "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/configure-okta-saml",
                      ]
-                },
-                {
-                  type: 'category',
-                  label: 'Configure OpenLDAP',
-                  items: [
-                         "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-openldap/openldap-config-reference",
-                         ]
                 },
                 {
                   type: 'category',
@@ -596,7 +519,6 @@ const sidebars = {
                      "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/apply-templates",
                      "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/infrastructure",
                      "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/example-use-cases",
-                     "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/example-yaml",
                      ]
             },
             {
@@ -786,28 +708,17 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Monitoring V2 Configuration Guides',
+          label: 'Monitoring V2 Configuration',
           items: [
-            {
-              type: 'category',
-              label: 'General Configuration',
-              items: [
-                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/receivers",
-                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/routes",
-                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/servicemonitors-and-podmonitors",
-                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/helm-chart-options",
-                 "how-to-guides/monitoring-v2-configuration-guides/general-configuration/examples",
-                     ] 
-            },
             {
               type: 'category',
               label: 'Advanced Configuration',
               items: [
-                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/alertmanager",
-                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/prometheus",
-                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/prometheusrules",
+                 "how-to-guides/monitoring-v2-configuration/advanced-configuration/alertmanager",
+                 "how-to-guides/monitoring-v2-configuration/advanced-configuration/prometheus",
+                 "how-to-guides/monitoring-v2-configuration/advanced-configuration/prometheusrules",
                      ]
-                    } 
+                    }
                   ]
         },
         {
@@ -845,18 +756,18 @@ const sidebars = {
       items: [ 
         {
           type: 'category',
-          label: 'Rancher Manager Architecture',
+          label: 'Architecture',
           items: [
-            "reference-guides/rancher-manager-architecture/rancher-server-and-components",
-            "reference-guides/rancher-manager-architecture/communicating-with-downstream-user-clusters",
-                   ],
-        },
-        {
-          type: 'category',
-          label: 'Architecture Recommendations',
-          items: [
-            "reference-guides/architecture-recommendations/recommended-architecture-setup",
-                   ], 
+            {
+              type: 'category',
+              label: 'Rancher Manager Architecture',
+              items: [
+                 "reference-guides/architecture/rancher-manager-architecture/rancher-server-and-components",
+                 "reference-guides/architecture/rancher-manager-architecture/communicating-with-downstream-user-clusters",
+                    ]
+              },
+                 "reference-guides/architecture/architecture-recommendations",
+                       ]
         },
         {
           type: 'category',
@@ -877,9 +788,15 @@ const sidebars = {
                   items: [
                     "reference-guides/cluster-configuration/rancher-server/gke/gke-private-clusters",
                   ]
+                },
+                {
+                  type: 'category',
+                  label: 'Use Existing Nodes',
+                  items: [
+                    "reference-guides/cluster-configuration/rancher-server/use-existing-nodes/rancher-agent-options",
+                   ]
           },
                 "reference-guides/cluster-configuration/rancher-server/sync-clusters",
-
                       ]
                   },
             {
@@ -909,12 +826,69 @@ const sidebars = {
                       ]
                     }
                   ]
-                },  
+                },
+        {
+          type: 'category',
+          label: 'Single-Node Rancher in Docker',
+          items: [
+           "reference-guides/single-node-rancher-in-docker/http-proxy-configuration",
+           "reference-guides/single-node-rancher-in-docker/advanced-options",
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Installation References',
+          items: [
+           "reference-guides/installation-references/helm-chart-options",
+           "reference-guides/installation-references/tls-settings",
+           "reference-guides/installation-references/feature-flags"
+                 ]
+        },
+        {
+          type: 'category',
+          label: 'Permissions',
+          items: [
+            {
+              type: 'category',
+              label: 'Amazon EKS', 
+              items: [
+                "reference-guides/permissions/amazon-eks/minimum-eks-permissions",
+                    ]
+                  }
+                ]
+        },               
+        {
+          type: 'category',
+          label: 'Backup & Restore Configuration',
+          items: [
+                 "reference-guides/backup-restore-configuration/backup-configuration",
+                 "reference-guides/backup-restore-configuration/restore-configuration",
+                 "reference-guides/backup-restore-configuration/storage-configuration", 
+                 ],
+        },
+        {
+          type: 'category',
+          label: 'Configure OpenLDAP',
+          items: [
+                "reference-guides/configure-openldap/openldap-config-reference",
+                    ]
+        },               
         {
           type: 'category',
           label: 'Kubernetes Concepts',
           items: [
             "reference-guides/kubernetes-concepts/overview-of-kubernetes-components",
+                   ],
+        },
+        {
+          type: 'category',
+          label: 'Monitoring V2 Configuration',
+          items: [
+            "reference-guides/monitoring-v2-configuration/receivers",
+            "reference-guides/monitoring-v2-configuration/routes",
+            "reference-guides/monitoring-v2-configuration/servicemonitors-and-podmonitors",
+            "reference-guides/monitoring-v2-configuration/helm-chart-options",
+            "reference-guides/monitoring-v2-configuration/examples",
                    ],
         },
         {
@@ -946,23 +920,19 @@ const sidebars = {
           type: 'category',
           label: 'Rancher Cluster Tools',
           items: [
-            "reference-guides/rancher-cluster-tools/cluster-logging-monitoring-and-visibility-tools"
+            "reference-guides/rancher-cluster-tools/cluster-logging-monitoring-and-visibility-tools",
                  ],
         },
         {
           type: 'category',
           label: 'Rancher Project Tools',
           items: [
-            "reference-guides/rancher-project-tools/project-logging-monitoring-and-visibility-tools"
-                 ],
+            "reference-guides/rancher-project-tools/project-logging-monitoring-and-visibility-tools",     
+                 ],         
         },
-        {
-          type: 'category',
-          label: 'System Tools',
-          items: [
-            "reference-guides/system-tools/system-tools"
-                 ],
-        },
+            "reference-guides/system-tools", 
+
+            "reference-guides/rke1-template-example-yaml",     
         {
           type: 'category',
           label: 'Pipelines',

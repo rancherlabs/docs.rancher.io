@@ -1,3 +1,0 @@
----
-title: Node Template Configuration
----

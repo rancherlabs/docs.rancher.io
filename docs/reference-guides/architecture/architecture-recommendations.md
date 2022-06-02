@@ -1,5 +1,5 @@
 ---
-title: Recommended Architecture Setup
+title: Architecture Recommendations
 ---
 
 ## Separation of Rancher and User Clusters
