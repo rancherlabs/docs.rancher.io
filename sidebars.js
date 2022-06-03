@@ -542,10 +542,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'Authentication, Permissions, and Global Configuration',
+          link: {
+            type: 'doc',
+            id: "authentication-permissions-and-global-configuration",
+          },
           items: [
             {
               type: 'category',
               label: 'About Authentication',
+              link: {
+                type: 'doc',
+                id: "about-authentication",
+              },
               items: [
                 {
                   type: 'category',
@@ -567,6 +575,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Configure Microsoft AD Federation Service (SAML)',
+                  link: {
+                    type: 'doc',
+                    id: "configure-microsoft-ad-federation-service-saml",
+                  },
                   items: [
                          "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service-saml/configure-ms-adfs-for-rancher",
                          "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-microsoft-ad-federation-service-saml/configure-rancher-for-ms-adfs",
@@ -575,6 +587,10 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Configure Shibboleth (SAML)',
+                  link: {
+                    type: 'doc',
+                    id: "configure-shibboleth-saml",
+                  },
                   items: [
                          "how-to-guides/authentication-permissions-and-global-configuration/about-authentication/configure-shibboleth-saml/about-group-permissions",
                          ]
@@ -584,6 +600,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Manage Role-Based Access Control (RBAC)',
+              link: {
+                type: 'doc',
+                id: "manage-role-based-access-control-rbac",
+              },
               items: [
                      "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/global-permissions",
                      "how-to-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/cluster-and-project-roles",
@@ -594,6 +614,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'About Provisioning Drivers',
+              link: {
+                type: 'doc',
+                id: "about-provisioning-drivers",
+              },
               items: [
                      "how-to-guides/authentication-permissions-and-global-configuration/about-provisioning-drivers/manage-cluster-drivers",
                      "how-to-guides/authentication-permissions-and-global-configuration/about-provisioning-drivers/manage-node-drivers",
@@ -602,6 +626,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'About RKE1 Templates',
+              link: {
+                type: 'doc',
+                id: "about-rke1-templates",
+              },
               items: [
                      "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/create-permissions",
                      "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/access-or-share-templates",
@@ -613,43 +641,30 @@ const sidebars = {
                      "how-to-guides/authentication-permissions-and-global-configuration/about-rke1-templates/example-use-cases",
                      ]
             },
-            {
-              type: 'category',
-              label: 'Manage Cluster Templates',
-              items: [
-                     "how-to-guides/authentication-permissions-and-global-configuration/manage-cluster-templates/cluster-templates",
+                     "how-to-guides/authentication-permissions-and-global-configuration/manage-cluster-templates",
+              
+                     "how-to-guides/authentication-permissions-and-global-configuration/create-pod-security-policies",
+              
+                     "how-to-guides/authentication-permissions-and-global-configuration/global-default-private-registry",
+                
+                     "how-to-guides/authentication-permissions-and-global-configuration/custom-branding",
                   ]
-            },
-            {
-              type: 'category',
-              label: 'Create Pod Security Policies',
-              items: [
-                     "how-to-guides/authentication-permissions-and-global-configuration/create-pod-security-policies/create-psp",
-                  ]
-            },
-            {
-              type: 'category',
-              label: 'Configure a Global Default Private Registry',
-              items: [
-                     "how-to-guides/authentication-permissions-and-global-configuration/configure-a-global-default-private-registry/global-default-private-registry",
-                  ]
-            },
-            {
-              type: 'category',
-              label: 'Set Up Custom Branding',
-              items: [
-                     "how-to-guides/authentication-permissions-and-global-configuration/set-up-custom-branding/custom-branding",
-                  ]
-                }
-              ]
         },
         {
           type: 'category',
           label: 'Manage Clusters',
+          link: {
+            type: 'doc',
+            id: "manage-clusters",
+          },
           items: [
             {
               type: 'category',
               label: 'Access Clusters',
+              link: {
+                type: 'doc',
+                id: "access-clusters",
+              },
               items: [
                      "how-to-guides/manage-clusters/access-clusters/use-kubectl-and-kubeconfig",
                      "how-to-guides/manage-clusters/access-clusters/authorized-cluster-endpoint",
@@ -659,6 +674,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Install Cluster Autoscaler',
+              link: {
+                type: 'doc',
+                id: "install-cluster-autoscaler",
+              },
               items: [
                      "how-to-guides/manage-clusters/install-cluster-autoscaler/use-aws-ec2-auto-scaling-groups",
                      ]
@@ -666,6 +685,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Create Kubernetes Persistent Storage',
+              link: {
+                type: 'doc',
+                id: "create-kubernetes-persistent-storage",
+              },
               items: [
                   {
                     type: 'category',
@@ -682,6 +705,10 @@ const sidebars = {
                   {
                     type: 'category',
                     label: 'Provisioning Storage Examples',
+                    link: {
+                      type: 'doc',
+                      id: "provisioning-storage-examples",
+                    },
                     items: [
                       "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/provisioning-storage-examples/persistent-storage-in-amazon-ebs",
                       "how-to-guides/manage-clusters/create-kubernetes-persistent-storage/provisioning-storage-examples/nfs-storage",
@@ -690,97 +717,45 @@ const sidebars = {
                           }
                         ]
             },
-            {
-              type: 'category',
-              label: 'About Projects and Namespaces',
-              items: [
-                "how-to-guides/manage-clusters/about-projects-and-namespaces/projects-and-namespaces",
-                     ]   
-            },
-            {
-              type: 'category',
-              label: 'Clone Cluster Configuration',
-              items: [
-                "how-to-guides/manage-clusters/clone-cluster-configuration/clone-cluster-config",
+                "how-to-guides/manage-clusters/projects-and-namespaces",
+            
+                "how-to-guides/manage-clusters/clone-cluster-configuration",
+            
+                "how-to-guides/manage-clusters/rotate-certificates",
+            
+                "how-to-guides/manage-clusters/nodes-and-node-pools",
+            
+                "how-to-guides/manage-clusters/clean-cluster-nodes", 
+              
+                "how-to-guides/manage-clusters/add-a-pod-security-policy", 
+                 
+                "how-to-guides/manage-clusters/assign-pod-security-policies", 
                      ]
-            },
-            {
-              type: 'category',
-              label: 'Rotate Certificates',
-              items: [
-                "how-to-guides/manage-clusters/rotate-certificates/rotate-certificates",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Manage Nodes and Node Pools',
-              items: [
-                "how-to-guides/manage-clusters/manage-nodes-and-node-pools/nodes-and-node-pools",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Clean Cluster Nodes',
-              items: [
-                "how-to-guides/manage-clusters/clean-cluster-nodes/clean-cluster-nodes", 
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Add a Pod Security Policy',
-              items: [
-                "how-to-guides/manage-clusters/add-a-pod-security-policy/add-psp", 
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Assign Pod Security Policies',
-              items: [
-                "how-to-guides/manage-clusters/assign-pod-security-policies/assign-psp", 
-                     ]
-                   }
-                  ]
         },
         {
           type: 'category',
           label: 'Manage Projects',
+          link: {
+            type: 'doc',
+            id: "manage-projects",
+          },
           items: [
-            {
-              type: 'category',
-              label: 'Add Users to Projects',
-              items: [
-                  "how-to-guides/manage-projects/add-users-to-projects/add-users-to-projects",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Manage Namespaces',
-              items: [
-                 "how-to-guides/manage-projects/manage-namespaces/manage-namespaces",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'About CI/CD Pipelines',
-              items: [
-                 "how-to-guides/manage-projects/about-ci-cd-pipelines/ci-cd-pipelines",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Manage Pod Security Policies',
-              items: [
-                 "how-to-guides/manage-projects/manage-pod-security-policies/manage-psp",
-                     ]
-            },
+                "how-to-guides/manage-projects/add-users-to-projects",
+                "how-to-guides/manage-projects/manage-namespaces",
+                "how-to-guides/manage-projects/ci-cd-pipelines",
+                "how-to-guides/manage-projects/manage-pod-security-policies",
             {
               type: 'category',
               label: 'Manage Project Resource Quotas',
+              link: {
+                type: 'doc',
+                id: "manage-project-resource-quotas",
+              },
               items: [
-                 "how-to-guides/manage-projects/manage-project-resource-quotas/about-project-resource-quotas",
-                 "how-to-guides/manage-projects/manage-project-resource-quotas/override-default-limit-in-namespaces",
-                 "how-to-guides/manage-projects/manage-project-resource-quotas/set-container-default-resource-limits",
-                 "how-to-guides/manage-projects/manage-project-resource-quotas/resource-quota-types",
+                  "how-to-guides/manage-projects/manage-project-resource-quotas/about-project-resource-quotas",
+                  "how-to-guides/manage-projects/manage-project-resource-quotas/override-default-limit-in-namespaces",
+                  "how-to-guides/manage-projects/manage-project-resource-quotas/set-container-default-resource-limits",
+                  "how-to-guides/manage-projects/manage-project-resource-quotas/resource-quota-types",
                      ]
                     }
                   ]
@@ -788,6 +763,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Monitoring/Alerting Guides',
+          link: {
+            type: 'doc',
+            id: "monitoring-alerting-guides",
+          },
           items: [
              "how-to-guides/monitoring-alerting-guides/enable-monitoring",
              "how-to-guides/monitoring-alerting-guides/uninstall-monitoring", 
@@ -801,10 +780,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'Monitoring V2 Configuration',
+          link: {
+            type: 'doc',
+            id: "monitoring-v2-configuration",
+          },
           items: [
             {
               type: 'category',
               label: 'Advanced Configuration',
+              link: {
+                type: 'doc',
+                id: "advanced-configuration",
+              },
               items: [
                  "how-to-guides/monitoring-v2-configuration/advanced-configuration/alertmanager",
                  "how-to-guides/monitoring-v2-configuration/advanced-configuration/prometheus",
@@ -816,6 +803,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Istio Setup Guide',
+          link: {
+            type: 'doc',
+            id: "istio-setup-guide",
+          },
           items: [
              "how-to-guides/istio-setup-guide/enable-istio-in-cluster",
              "how-to-guides/istio-setup-guide/enable-istio-in-namespace",
@@ -828,6 +819,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'CIS Scan Guides',
+          link: {
+            type: 'doc',
+            id: "cis-scan-guides",
+          },
           items: [
              "how-to-guides/cis-scan-guides/install-rancher-cis-benchmark",
              "how-to-guides/cis-scan-guides/uninstall-rancher-cis-benchmark",

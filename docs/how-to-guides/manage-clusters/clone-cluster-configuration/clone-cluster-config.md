@@ -1,3 +1,0 @@
----
-title: Clone Cluster Config
----
