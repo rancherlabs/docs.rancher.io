@@ -1,0 +1,3 @@
+---
+title: Rancher Manager Architecture
+---

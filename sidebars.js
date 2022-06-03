@@ -840,6 +840,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Reference Guides',
+      link: {
+        type: 'doc',
+        id: "reference-guides",
+      },
       items: [ 
         {
           type: 'category',
@@ -848,6 +852,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Rancher Manager Architecture',
+              link: {
+                type: 'doc',
+                id: "rancher-manager-architecture",
+              },
               items: [
                  "reference-guides/architecture/rancher-manager-architecture/rancher-server-and-components",
                  "reference-guides/architecture/rancher-manager-architecture/communicating-with-downstream-user-clusters",
