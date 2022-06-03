@@ -27,10 +27,14 @@ const sidebars = {
         {
           type: 'category',
           label: 'Introduction',
+          link: {
+            type: 'doc',
+            id: "introduction",
+          },
           items: [
             "getting-started/introduction/overview",
             "getting-started/introduction/what-are-divio-docs",
-                 ],            
+                 ], 
         },
         {
           type: 'category',
@@ -110,6 +114,8 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-gke",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/troubleshooting",
                     ]
+                  }
+                ]
             },
             {
               type: 'category',
@@ -122,6 +128,10 @@ const sidebars = {
                   {
                     type: 'category',
                     label: 'Air-Gapped Helm CLI Install',
+                    link: {
+                      type: 'doc',
+                      id: 'air-gapped-helm-cli-install',
+                    },
                     items: [
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/infrastructure-private-registry",
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/publish-images",
@@ -132,6 +142,10 @@ const sidebars = {
                   {
                     type: 'category',
                     label: 'Rancher on a Single Node with Docker',
+                    link: {
+                      type: 'doc',
+                      id: 'rancher-on-a-single-node-with-docker',
+                    },
                     items: [
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/upgrade-docker-installed-rancher",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/roll-back-docker-installed-rancher",
@@ -141,17 +155,25 @@ const sidebars = {
                   { 
                     type: 'category',
                     label: 'Rancher Behind an HTTP Proxy',
+                    link: {
+                      type: 'doc',
+                      id: 'rancher-behind-an-http-proxy',
+                    },
                     items: [ 
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/set-up-infrastructure",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/install-kubernetes",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/install-rancher",
                            ]
-                          }
-                        ],
+                  }
+                ],
             },
             {
               type: 'category',
               label: 'Resources',
+              link: {
+                type: 'doc',
+                id: 'resources',
+              },
               items: [
                     "getting-started/installation-and-upgrade/resources/choose-a-rancher-version",
                     "getting-started/installation-and-upgrade/resources/helm-version-requirements",
@@ -162,35 +184,34 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/resources/bootstrap-password",
                      ]
             }, 
-            {
-              type: 'category',
-              label: 'Upgrade and Roll Back Kubernetes',
-              items: [
-                    "getting-started/installation-and-upgrade/upgrade-and-roll-back-kubernetes/upgrade-and-roll-back",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Upgrade Kubernetes without Upgrading Rancher',
-              items: [
-                    "getting-started/installation-and-upgrade/upgrade-kubernetes-without-upgrading-rancher/upgrade-kubernetes-not-rancher",
-                     ],
-            },
+                    "getting-started/installation-and-upgrade/upgrade-and-roll-back-kubernetes",
+                    
+                    "getting-started/installation-and-upgrade/upgrade-kubernetes-without-upgrading-rancher",
             { 
               type: 'category',
               label: 'Advanced Options',
+              link: {
+                type: 'doc',
+                id: 'advanced-options',
+              },
               items: [
                 {
                     type: 'category',
                     label: 'Enable Experimental Features',
+                    link: {
+                      type: 'doc',
+                      id: 'enable-experimental-features',
+                    },
                     items: [
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/rancher-on-arm64",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/unsupported-storage-drivers",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/istio-traffic-management-features",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/continuous-delivery",
                            ]
-                },
-                {
+                 }
+                    ]
+            },
+            {
                     type: 'category',
                     label: 'Advanced Use Cases',
                     items: [
@@ -198,46 +219,62 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/tune-etcd-for-large-installs",
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/enable-api-audit-log",
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
-                           ],
-                 }
-                ]
-              }
-            ]
-          }
-        ]
-    },
+                           ]
+            }
+          ]
+    },            
     {
       type: 'category',
       label: 'Tutorials',
+      link: {
+        type: 'doc',
+        id: "tutorials",
+      },
       items: [ 
         {
           type: 'category',
           label: 'Best Practices',
+          link: {
+            type: 'doc',
+            id: "best-practices",
+          },
           items: [
             {
               type: 'category',
               label: 'Rancher Server',
+              link: {
+                type: 'doc',
+                id: "rancher-server",
+              },
               items: [
                      "tutorials/best-practices/rancher-server/on-premises-rancher-in-vsphere",
                      "tutorials/best-practices/rancher-server/rancher-deployment-strategy",
                      "tutorials/best-practices/rancher-server/tips-for-running-rancher"                            
                      ]
-                    },
+            },
             {
               type: 'category',
               label: 'Rancher-Managed Clusters',
+              link: {
+                type: 'doc',
+                id: "rancher-managed-clusters",
+              },
               items: [
                      "tutorials/best-practices/rancher-managed-clusters/logging-best-practices",
                      "tutorials/best-practices/rancher-managed-clusters/monitoring-best-practices",
                      "tutorials/best-practices/rancher-managed-clusters/tips-to-set-up-containers",
                      "tutorials/best-practices/rancher-managed-clusters/rancher-managed-clusters-in-vsphere"
                      ]
-                    }
-                  ]
+            }
+                ]
         },
         {
           type: 'category',
           label: 'Kubernetes Cluster Setup',
+          link: {
+            type: 'doc',
+            id: "kubernetes-cluster-setup",
+                },
           items: [
                   "tutorials/kubernetes-cluster-setup/high-availability-installs",
                   "tutorials/kubernetes-cluster-setup/k3s-for-rancher",
@@ -248,6 +285,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Infrastructure Setup',
+          link: {
+            type: 'doc',
+            id: "infrastructure-setup",
+          },
           items: [
                   "tutorials/infrastructure-setup/ha-k3s-kubernetes-cluster",
                   "tutorials/infrastructure-setup/ha-rke1-kubernetes-cluster",
@@ -261,46 +302,62 @@ const sidebars = {
         {
           type: 'category',
           label: 'Kubernetes Clusters in Rancher Setup',
+          link: {
+            type: 'doc',
+            id: "kubernetes-clusters-in-rancher-setup",
+          },
           items: [
-                {
-                  type: 'category',
-                  label: 'Node Requirements for Rancher-Managed Clusters',
-                  items: [
-                       "tutorials/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters/node-requirements",
+                  "tutorials/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters",
+            {
+              type: 'category',
+              label: 'Checklist for Production-Ready Clusters',
+               link: {
+                 type: 'doc',
+                 id: "checklist-for-production-ready-clusters",
+                  },
+                items: [
+                   "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/recommended-cluster-architecture",
+                   "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/roles-for-nodes-in-kubernetes",
                          ],
-                },
-                {
-                  type: 'category',
-                  label: 'Checklist for Production-Ready Clusters',
-                  items: [
-                       "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/recommended-cluster-architecture",
-                       "tutorials/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/roles-for-nodes-in-kubernetes",
-                         ],
-                },
-                {
-                  type: 'category',
-                  label: 'Set Up Clusters from Hosted Kubernetes Providers',
-                  items: [
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/gke",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/aks",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/alibaba",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/tencent",
-                            "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/huawei",
-                          ]
-                      }
-                   ]
-                },
-                { 
-                  type: 'category',
-                  label: 'Launch Kubernetes with Rancher',
-                  items: [
-                     {
-                        type: 'category',
-                        label: 'Use New Nodes in an Infra Provider',
+            },
+            {      
+              type: 'category',
+              label: 'Set Up Clusters from Hosted Kubernetes Providers',
+              link: {
+                type: 'doc',
+                id: "set-up-clusters-from-hosted-kubernetes-providers",
+                  },
+                items: [
+                     "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/gke",
+                     "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/aks",
+                     "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/alibaba",
+                     "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/tencent",
+                     "tutorials/kubernetes-clusters-in-rancher-setup/set-up-clusters-from-hosted-kubernetes-providers/huawei",
+                       ]
+            },
+            { 
+              type: 'category',
+              label: 'Launch Kubernetes with Rancher',
+              link: {
+                type: 'doc',
+                id: "launch-kubernetes-with-rancher",
+                  },
+              items: [
+                 {
+                    type: 'category',
+                    label: 'Use New Nodes in an Infra Provider',
+                    link: {
+                      type: 'doc',
+                       id: "use-new-nodes-in-an-infra-provider",
+                        },
                         items: [
                             {
                               type: 'category',
                               label: 'vSphere',
+                              link: {
+                                type: 'doc',
+                                id: "vsphere",
+                              },
                               items: [
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/provision-kubernetes-clusters-in-vsphere",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/create-credentials",     
@@ -309,24 +366,36 @@ const sidebars = {
                             {
                               type: 'category',
                               label: 'Nutanix',
+                              link: {
+                                type: 'doc',
+                                id: "nutanix",
+                              },
                               items: [
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/provision-kubernetes-clusters-in-aos",          
                                      ]
-                            },
-                            ]
-                      },
-                      {
-                        type: 'category',
-                        label: 'Use Windows Clusters',
+                              }
+                        ]
+                  },
+                  {
+                     type: 'category',
+                     label: 'Use Windows Clusters',
+                     link: {
+                       type: 'doc',
+                       id: "use-windows-clusters",
+                        },
                         items: [
                            "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-windows-clusters/azure-storageclass-configuration",
                            "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-windows-clusters/windows-linux-cluster-feature-parity",
                            "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-windows-clusters/network-requirements-for-host-gateway",
                                ]
-                      },
-                      {
-                        type: 'category',
-                        label: 'Set Up Cloud Providers',
+                  },
+                  {
+                     type: 'category',
+                     label: 'Set Up Cloud Providers',
+                     link: {
+                       type: 'doc',
+                       id: "set-up-cloud-providers",
+                        },
                         items: [
                             {
                               type: 'category',
@@ -340,54 +409,55 @@ const sidebars = {
                             {
                               type: 'category',
                               label: 'vSphere',
+                              link: {
+                                type: 'doc',
+                                id: "vsphere-cloud-provider"
+                              },
                               items: [
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/vsphere/configure-in-tree-vsphere",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/vsphere/configure-out-of-tree-vsphere",
                                 "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/vsphere/migrate-from-in-tree-to-out-of-tree",
                                     ]
-                            }
-                         ]
-                      },
-                      {
-                        type: 'category',
-                        label: 'RKE1 vs. RKE2 Behavior',
-                        items: [
-                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/rke1-vs-rke2-behavior/rke1-vs-rke2-differences",
-                               ]
-                      },
-                      {
-                        type: 'category',
-                        label: 'About Rancher Agents',
-                        items: [
-                           "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/about-rancher-agents/rancher-agents",
-                               ]
-                      },
-                    ]
-                  },
-                  {
-                    type: 'category',
-                    label: 'Register Existing Clusters',
-                    items: [
-                         "tutorials/kubernetes-clusters-in-rancher-setup/register-existing-clusters/register-existing-clusters",
-                           ],
+                                }
+                             ]
+                  },                   
+                     "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/rke1-vs-rke2-differences",
+                      
+                     "tutorials/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/about-rancher-agents",
+                        ]
+            },
+              "tutorials/kubernetes-clusters-in-rancher-setup/register-existing-clusters", 
+            ]
         },
         {
           type: 'category',
           label: 'Kubernetes Resources Setup',
+          link: {
+            type: 'doc',
+            id: "kubernetes-resources-setup",
+          },
           items: [
             {
               type: 'category',
-              label: 'About Workloads and Pods',
+              label: 'Workloads and Pods',
+              link: {
+                type: 'doc',
+                id: "workloads-and-pods",
+              },
               items: [
-                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/deploy-workloads",
-                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/roll-back-workloads",
-                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/upgrade-workloads",
-                     "tutorials/kubernetes-resources-setup/about-workloads-and-pods/add-a-sidecar",                            
+                     "tutorials/kubernetes-resources-setup/workloads-and-pods/deploy-workloads",
+                     "tutorials/kubernetes-resources-setup/workloads-and-pods/roll-back-workloads",
+                     "tutorials/kubernetes-resources-setup/workloads-and-pods/upgrade-workloads",
+                     "tutorials/kubernetes-resources-setup/workloads-and-pods/add-a-sidecar",                            
                      ]
             },
             {
               type: 'category',
               label: 'Horizontal Pod Autoscaler',
+              link: {
+                type: 'doc',
+                id: "horizontal-pod-autoscaler",
+              },
               items: [
                      "tutorials/kubernetes-resources-setup/horizontal-pod-autoscaler/about-hpas",
                      "tutorials/kubernetes-resources-setup/horizontal-pod-autoscaler/manage-hpas-with-ui",
@@ -398,52 +468,34 @@ const sidebars = {
             {
               type: 'category',
               label: 'Load Balancer and Ingress Controller',
+              link: {
+                type: 'doc',
+                id: "load-balancer-and-ingress-controller",
+              },
               items: [
                      "tutorials/kubernetes-resources-setup/load-balancer-and-ingress-controller/layer-4-and-layer-7-load-balancing",
                      "tutorials/kubernetes-resources-setup/load-balancer-and-ingress-controller/add-ingresses",
                      "tutorials/kubernetes-resources-setup/load-balancer-and-ingress-controller/configure-ingresses",                           
                      ]
             },                  
-              {
-              type: 'category',
-              label: 'Create Services',
-              items: [
-                     "tutorials/kubernetes-resources-setup/create-services/create-services", 
+                     "tutorials/kubernetes-resources-setup/create-services", 
+           
+                     "tutorials/kubernetes-resources-setup/encrypt-http-communication", 
+            
+                     "tutorials/kubernetes-resources-setup/configmaps", 
+             
+                     "tutorials/kubernetes-resources-setup/secrets", 
+             
+                     "tutorials/kubernetes-resources-setup/kubernetes-and-docker-registries", 
                      ],
-            },
-             {
-              type: 'category',
-              label: 'Encrypt HTTP Communication',
-              items:  [
-                      "tutorials/kubernetes-resources-setup/encrypt-http-communication/encrypt-http-communication", 
-                      ],
-            },
-            {
-              type: 'category',
-              label: 'Work with ConfigMaps',
-              items: [
-                     "tutorials/kubernetes-resources-setup/work-with-configmaps/configmaps", 
-                     ],
-            },
-            {
-              type: 'category',
-              label: 'About Secrets',
-              items: [
-                     "tutorials/kubernetes-resources-setup/about-secrets/secrets", 
-                     ],
-            },
-            {
-              type: 'category',
-              label: 'Use Kubernetes and Docker Registries',
-              items: [
-                     "tutorials/kubernetes-resources-setup/use-kubernetes-and-docker-registries/kubernetes-and-docker-registries", 
-                     ],
-                    }
-                  ]
         },
         {
           type: 'category',
           label: 'Helm Charts in Rancher',
+          link: {
+            type: 'doc',
+            id: "helm-charts-in-rancher",
+          },
           items: [
                  "tutorials/helm-charts-in-rancher/create-apps",                            
                      ]
@@ -451,6 +503,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Deploy Apps Across Clusters',
+          link: {
+            type: 'doc',
+            id: "deploy-apps-across-clusters",
+          },
           items: [
                  "tutorials/deploy-apps-across-clusters/fleet",
                  "tutorials/deploy-apps-across-clusters/multi-cluster-apps",                            
@@ -459,6 +515,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Backup, Restore, and Disaster Recovery',
+          link: {
+            type: 'doc',
+            id: "backup-restore-and-disaster-recovery",
+          },
           items: [
             "tutorials/backup-restore-and-disaster-recovery/back-up-rancher",
             "tutorials/backup-restore-and-disaster-recovery/restore-rancher",
@@ -470,10 +530,14 @@ const sidebars = {
                 ]
               }
             ]
-          },
+    },  
     {
       type: 'category',
       label: 'How-to Guides',
+      link: {
+        type: 'doc',
+        id: "how-to-guides",
+      },
       items: [ 
         {
           type: 'category',
@@ -1182,8 +1246,8 @@ const sidebars = {
       label: 'Contribute to Rancher',
       items: [
         "contribute-to-rancher/contribute-to-rancher",
-      ],
-    },
-     ]
+      ]
+    } 
+  ],
 }
 module.exports = sidebars;
