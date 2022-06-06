@@ -1,0 +1,3 @@
+---
+title: Custom Resource Configuration
+---

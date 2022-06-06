@@ -22,7 +22,11 @@ const sidebars = {
       'rancher-manager',             
     {    
       type: 'category',
-      label: 'Getting Started', 
+      label: 'Getting Started',
+      link: {
+        type: 'doc',
+        id: "getting-started",
+      },
       items: [
         {
           type: 'category',
@@ -83,7 +87,7 @@ const sidebars = {
           link: {
             type: 'doc',
             id: "installation-and-upgrade",
-            },
+                },
             items: [
             {
               type: 'category',
@@ -91,7 +95,7 @@ const sidebars = {
               link: {
                 type: 'doc',
                 id: "installation-requirements",
-              },
+                    },
               items: [
                     "getting-started/installation-and-upgrade/installation-requirements/install-docker",
                     "getting-started/installation-and-upgrade/installation-requirements/dockershim",
@@ -104,7 +108,7 @@ const sidebars = {
               link: {
                 type: 'doc',
                 id: "install-upgrade-on-a-kubernetes-cluster",
-              },
+                    },
               items: [      
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rollbacks",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/upgrades",
@@ -114,8 +118,6 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/rancher-on-gke",
                     "getting-started/installation-and-upgrade/install-upgrade-on-a-kubernetes-cluster/troubleshooting",
                     ]
-                  }
-                ]
             },
             {
               type: 'category',
@@ -145,7 +147,7 @@ const sidebars = {
                     link: {
                       type: 'doc',
                       id: 'rancher-on-a-single-node-with-docker',
-                    },
+                          },
                     items: [
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/upgrade-docker-installed-rancher",
                           "getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker/roll-back-docker-installed-rancher",
@@ -208,10 +210,8 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/istio-traffic-management-features",
                           "getting-started/installation-and-upgrade/advanced-options/enable-experimental-features/continuous-delivery",
                            ]
-                 }
-                    ]
-            },
-            {
+                },
+                {
                     type: 'category',
                     label: 'Advanced Use Cases',
                     items: [
@@ -220,9 +220,13 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/enable-api-audit-log",
                           "getting-started/installation-and-upgrade/advanced-options/advanced-use-cases/configure-layer-7-nginx-load-balancer",
                            ]
+                }
+                    ]
             }
-          ]
-    },            
+           ]
+          }
+        ]
+      },            
     {
       type: 'category',
       label: 'Tutorials',
@@ -779,10 +783,10 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Monitoring V2 Configuration',
+          label: 'Monitoring V2 Configuration Guides',
           link: {
             type: 'doc',
-            id: "monitoring-v2-configuration",
+            id: "monitoring-v2-configuration-guides",
           },
           items: [
             {
@@ -793,9 +797,9 @@ const sidebars = {
                 id: "advanced-configuration",
               },
               items: [
-                 "how-to-guides/monitoring-v2-configuration/advanced-configuration/alertmanager",
-                 "how-to-guides/monitoring-v2-configuration/advanced-configuration/prometheus",
-                 "how-to-guides/monitoring-v2-configuration/advanced-configuration/prometheusrules",
+                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/alertmanager",
+                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/prometheus",
+                 "how-to-guides/monitoring-v2-configuration-guides/advanced-configuration/prometheusrules",
                      ]
                     }
                   ]
@@ -945,16 +949,24 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Amazon EKS', 
+              label: 'Amazon EKS',
+              link: {
+                type: 'doc',
+                id: "amazon-eks",
+                    }, 
               items: [
                 "reference-guides/permissions/amazon-eks/minimum-eks-permissions",
-                    ]
-                  }
+                     ]
+            }
                 ]
         },               
         {
           type: 'category',
           label: 'Backup & Restore Configuration',
+          link: {
+            type: 'doc',
+            id: "backup-restore-configuration",
+          },
           items: [
                  "reference-guides/backup-restore-configuration/backup-configuration",
                  "reference-guides/backup-restore-configuration/restore-configuration",
@@ -964,20 +976,22 @@ const sidebars = {
         {
           type: 'category',
           label: 'Configure OpenLDAP',
+          link: {
+            type: 'doc',
+            id: "configure-openldap",
+          },
           items: [
                 "reference-guides/configure-openldap/openldap-config-reference",
                     ]
         },               
-        {
-          type: 'category',
-          label: 'Kubernetes Concepts',
-          items: [
-            "reference-guides/kubernetes-concepts/overview-of-kubernetes-components",
-                   ],
-        },
+            "reference-guides/kubernetes-concepts",
         {
           type: 'category',
           label: 'Monitoring V2 Configuration',
+          link: {
+            type: 'doc',
+            id: "monitoring-v2-configuration",
+          },
           items: [
             "reference-guides/monitoring-v2-configuration/receivers",
             "reference-guides/monitoring-v2-configuration/routes",
@@ -989,6 +1003,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'User Settings',
+          link: {
+            type: 'doc',
+            id: "user-settings",
+          },
           items: [
             "reference-guides/user-settings/api-keys",
             "reference-guides/user-settings/manage-node-templates",
@@ -999,6 +1017,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'CLI with Rancher',
+          link: {
+            type: 'doc',
+            id: "cli-with-rancher",
+          },
           items: [
             "reference-guides/cli-with-rancher/rancher-cli",
             "reference-guides/cli-with-rancher/kubectl-utility",
@@ -1007,6 +1029,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'About the API',
+          link: {
+            type: 'doc',
+            id: "about-the-api",
+          },
           items: [
             "reference-guides/about-the-api/api-tokens",
                  ]
@@ -1031,6 +1057,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Pipelines',
+          link: {
+            type: 'doc',
+            id: "pipelines",
+               },
           items: [
             "reference-guides/pipelines/concepts",
             "reference-guides/pipelines/pipeline-configuration",
@@ -1042,10 +1072,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'Rancher Security',
+          link: {
+            type: 'doc',
+            id: "rancher-security",
+          },
           items: [
             {
               type: 'category',
               label: 'Rancher v2.6 Hardening Guides',
+              link: {
+                type: 'doc',
+                id: "rancher-v2.6-hardening-guides",
+              },
               items: [
                 "reference-guides/rancher-security/rancher-v2.6-hardening-guides/hardening-guide-with-cis-v1.6-benchmark",
                 "reference-guides/rancher-security/rancher-v2.6-hardening-guides/self-assessment-guide-with-cis-v1.6-benchmark",
@@ -1054,32 +1092,29 @@ const sidebars = {
             {  
               type: 'category',
               label: 'SELinux RPM',
+              link: {
+                type: 'doc',
+                id: "selinux-rpm",
+              },
               items: [
                 "reference-guides/rancher-security/selinux-rpm/about-rancher-selinux",
                 "reference-guides/rancher-security/selinux-rpm/about-rke2-selinux",
                      ],
             },
-            {
-              type: 'category',
-              label: 'Kubernetes Security Best Practices',
-              items: [
-                "reference-guides/rancher-security/kubernetes-security-best-practices/kubernetes-security",
-                     ],
-            },
-            {
-              type: 'category',
-              label: 'Security Advisories and CVEs',
-              items: [
-                "reference-guides/rancher-security/security-advisories-and-cves/published-advisories-and-cves",
-                     ]
-                   }
+                "reference-guides/rancher-security/kubernetes-security-best-practices",
+            
+                "reference-guides/rancher-security/security-advisories-and-cves",
                   ],
                 }
               ]
             },
     {    
       type: 'category',
-      label: 'Explanations', 
+      label: 'Explanations',
+      link: {
+        type: 'doc',
+        id: "explanations",
+      }, 
       items: [
         "explanations/sample",
                            ],
@@ -1087,10 +1122,18 @@ const sidebars = {
     {
       type: 'category',
       label: 'Integrations in Rancher',
+      link: {
+        type: 'doc',
+        id: "integrations-in-rancher",
+      },
       items: [ 
         {
           type: 'category',
           label: 'CIS Scans',
+          link: {
+            type: 'doc',
+            id: "cis-scans",
+          },
           items: [
             "integrations-in-rancher/cis-scans/configuration-reference",
             "integrations-in-rancher/cis-scans/rbac-for-cis-scans",
@@ -1108,13 +1151,7 @@ const sidebars = {
             "integrations-in-rancher/fleet/use-fleet-behind-a-proxy",
                  ]
         },
-        {
-          type: 'category',
-          label: 'Harvester',
-          items: [
-            "integrations-in-rancher/harvester/about-harvester",
-                 ]
-        },
+            "integrations-in-rancher/harvester",
         {
           type: 'category',
           label: 'Istio',
@@ -1122,6 +1159,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'About Istio',
+              link: {
+                type: 'doc',
+                id: "about-istio",
+              },
               items: [
                 "integrations-in-rancher/istio/about-istio/cpu-and-memory-allocations",
                 "integrations-in-rancher/istio/about-istio/rbac-for-istio",
@@ -1131,6 +1172,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Configuration Options',
+              link: {
+                type: 'doc',
+                id: "configuration-options",
+              },
               items: [
                 "integrations-in-rancher/istio/configuration-options/pod-security-policies",
                 "integrations-in-rancher/istio/configuration-options/selectors-and-scrape-configurations",
@@ -1140,13 +1185,7 @@ const sidebars = {
                    }
                  ]
         },
-        {
-          type: 'category',
-          label: 'Longhorn',
-          items: [
-            "integrations-in-rancher/longhorn/about-longhorn-storage",
-                 ]
-        },
+            "integrations-in-rancher/longhorn",
         {
           type: 'category',
           label: 'Logging',
@@ -1154,6 +1193,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'About Logging',
+              link: {
+                type: 'doc',
+                id: "about-logging",
+              },
               items: [
                 "integrations-in-rancher/logging/about-logging/logging-architecture",
                 "integrations-in-rancher/logging/about-logging/migrate-to-rancher-v2.5+-logging",
@@ -1165,6 +1208,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Custom Resource Configuration',
+              link: {
+                type: 'doc',
+                id: "custom-resource-configuration",
+              },
               items: [
                 "integrations-in-rancher/logging/custom-resource-configuration/flows-and-clusterflows",
                 "integrations-in-rancher/logging/custom-resource-configuration/outputs-and-clusteroutputs"
@@ -1175,6 +1222,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Monitoring and Alerting',
+          link: {
+            type: "doc",
+            id: "monitoring-and-alerting",
+                },
           items: [
             "integrations-in-rancher/monitoring-and-alerting/how-monitoring-works",
             "integrations-in-rancher/monitoring-and-alerting/rbac-for-monitoring",
@@ -1184,25 +1235,18 @@ const sidebars = {
             "integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
                  ]
         },
-        {
-          type: 'category',
-          label: 'NeuVector',
-          items: [
-            "integrations-in-rancher/neuvector/about-neuvector",
-                 ]
-        },
-        {
-          type: 'category',
-          label: 'OPA Gatekeeper',
-          items: [
-            "integrations-in-rancher/opa-gatekeeper/about-opa-gatekeeper",
-          ],
-        }
+            "integrations-in-rancher/neuvector",
+        
+            "integrations-in-rancher/opa-gatekeeper",
       ]
     },
     {
       type: 'category',
       label: 'FAQ',
+      link: {
+        type: 'doc',
+        id: "faq",
+      },
       items: [
         "faq/deprecated-features-in-v2.5",
         "faq/install-and-configure-kubectl",
@@ -1217,10 +1261,18 @@ const sidebars = {
     {
       type: 'category',
       label: 'Troubleshooting',
+      link: {
+        type: 'doc',
+        id: "troubleshooting",
+      },
       items: [ 
         {
           type: 'category',
           label: 'Kubernetes Components',
+          link: {
+            type: 'doc',
+            id: "kubernetes-components",
+          },
           items: [
             "troubleshooting/kubernetes-components/troubleshooting-etcd-nodes",
             "troubleshooting/kubernetes-components/troubleshooting-controlplane-nodes",
@@ -1244,13 +1296,7 @@ const sidebars = {
                 }
               ]
     },
-    {
-      type: 'category',
-      label: 'Contribute to Rancher',
-      items: [
-        "contribute-to-rancher/contribute-to-rancher",
-      ]
-    } 
+        "contribute-to-rancher",
   ],
 }
 module.exports = sidebars;

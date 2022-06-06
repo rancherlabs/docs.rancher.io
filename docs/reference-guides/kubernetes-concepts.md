@@ -1,5 +1,5 @@
 ---
-title: Overview of Kubernetes Components
+title: Kubernetes Concepts
 ---
 
 This page explains concepts related to Kubernetes that are important for understanding how Rancher works. The descriptions below provide a simplified overview of Kubernetes components. For more details, refer to the official documentation on [Kubernetes components](https://kubernetes.io/docs/concepts/overview/components/).
