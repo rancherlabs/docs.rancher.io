@@ -15,7 +15,7 @@ Rancher docs employ the above categories but also add additional categories to a
 - [New Structure Goals](#new-structure-goals)
 - [Other Docs Categories](#other-docs-categories)
     - [Integrations in Rancher](#integrations-in-rancher)
-    - [FAQ](FAQ)
+    - [FAQ](#faq)
     - [Troubleshooting](#troubleshooting)
     - [Contribute to Rancher](#contribute-to-rancher)
 
