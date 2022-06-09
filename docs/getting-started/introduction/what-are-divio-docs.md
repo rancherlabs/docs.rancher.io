@@ -2,7 +2,7 @@
 title: What Are Divio Docs?
 ---
 
-The [Divio documentation system](https://documentation.divio.com/) is a software documentation paradigm that is based on functionality and the premise that the best documentation is specific, concise, and, useful. Divio consists of four main categories: [tutorials](#tutorials), [how-to-guides](#how-to-guides), [reference guides](#reference-guides), and [explanations](#explanations).
+The [Divio documentation system](https://documentation.divio.com/) is a software documentation paradigm that is based on functionality and the premise that the best documentation is specific, concise, and useful. Divio consists of four main categories: [tutorials](#tutorials), [how-to-guides](#how-to-guides), [reference guides](#reference-guides), and [explanations](#explanations).
 
 Rancher docs employ the above categories but also add additional categories to assist its users: [getting started](#getting-started), [integrations in Rancher](#integrations-in-rancher), [FAQ](#faq), [Troubleshooting](#troubleshooting), and the ability to [contribute to Rancher](#contribute-to-rancher). These additional sections will enhance the user experience by providing Rancher-specific context to getting Rancher up and running quickly, answer frequently-encountered questions or problems, and to provide the opportunity to constantly improve our open-sourced docs by providing a means to contribute to them.
 
