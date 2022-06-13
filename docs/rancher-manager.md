@@ -3,16 +3,4 @@ title: Rancher Manager
 slug: /
 ---
 
->**Note: This is not a complete description of RM; partially filled in for landing page purposes.**
-
-Rancher was originally built to work with multiple orchestrators, and it included its own orchestrator called Cattle. With the rise of Kubernetes in the marketplace, Rancher 2 exclusively deploys and manages Kubernetes clusters running anywhere, on any provider.
-
-Rancher can provision Kubernetes from a hosted provider, provision compute nodes and then install Kubernetes onto them, or import existing Kubernetes clusters running anywhere.
-
-One Rancher server installation can manage thousands of Kubernetes clusters and thousands of nodes from the same user interface.
-
-Rancher adds significant value on top of Kubernetes, first by centralizing authentication and role-based access control (RBAC) for all of the clusters, giving global admins the ability to control cluster access from one location.
-
-It then enables detailed monitoring and alerting for clusters and their resources, ships logs to external providers, and integrates directly with Helm via the Application Catalog. If you have an external CI/CD system, you can plug it into Rancher, but if you don’t, Rancher even includes Fleet to help you automatically deploy and upgrade workloads.
-
-Rancher is a complete container management platform for Kubernetes, giving you the tools to successfully run Kubernetes anywhere.
+https://rancher.com/docs/rancher/v2.6/en/

@@ -56,8 +56,8 @@ const sidebars = {
                 id: "pages-for-subheaders/deploy-rancher-manager",
              },
               items: [
-                    "getting-started/quick-start-guides/deploy-rancher-manager/aws-with-terraform",
-                    "getting-started/quick-start-guides/deploy-rancher-manager/aws-with-eks",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/aws",
+                    "getting-started/quick-start-guides/deploy-rancher-manager/aws-marketplace",
                     "getting-started/quick-start-guides/deploy-rancher-manager/azure",
                     "getting-started/quick-start-guides/deploy-rancher-manager/digitalocean",
                     "getting-started/quick-start-guides/deploy-rancher-manager/gcp",
@@ -138,7 +138,7 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/infrastructure-private-registry",
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/publish-images",
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/install-kubernetes",
-                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/rancher-ha",    
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/install-rancher-ha",    
                            ]
                   },
                   {
@@ -182,7 +182,7 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/resources/add-tls-secrets",
                     "getting-started/installation-and-upgrade/resources/custom-ca-root-certificates",
                     "getting-started/installation-and-upgrade/resources/upgrade-cert-manager",
-                    "getting-started/installation-and-upgrade/resources/update-private-ca-certificate",
+                    "getting-started/installation-and-upgrade/resources/update-rancher-certificate",
                     "getting-started/installation-and-upgrade/resources/bootstrap-password",
                      ]
             }, 
@@ -450,7 +450,7 @@ const sidebars = {
                     items: [
                           "how-to-guides/new-user-guides/kubernetes-resources-setup/load-balancer-and-ingress-controller/layer-4-and-layer-7-load-balancing",
                           "how-to-guides/new-user-guides/kubernetes-resources-setup/load-balancer-and-ingress-controller/add-ingresses",
-                          "how-to-guides/new-user-guides/kubernetes-resources-setup/load-balancer-and-ingress-controller/configure-ingresses",                           
+                          "how-to-guides/new-user-guides/kubernetes-resources-setup/load-balancer-and-ingress-controller/ingress-configuration",                           
                           ]
                   },                  
                      "how-to-guides/new-user-guides/kubernetes-resources-setup/create-services", 
