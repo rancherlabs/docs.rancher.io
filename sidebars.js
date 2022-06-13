@@ -862,6 +862,127 @@ const sidebars = {
               },
         {
           type: 'category',
+          label: 'Integrations in Rancher',
+          link: {
+            type: 'doc',
+            id: "integrations-in-rancher",
+                },
+            items: [ 
+            {
+              type: 'category',
+              label: 'CIS Scans',
+              link: {
+                type: 'doc',
+                id: "pages-for-subheaders/cis-scans",
+                    },
+              items: [
+                  "reference-guides/integrations-in-rancher/cis-scans/configuration-reference",
+                  "reference-guides/integrations-in-rancher/cis-scans/rbac-for-cis-scans",
+                  "reference-guides/integrations-in-rancher/cis-scans/skipped-and-not-applicable-tests",
+                  "reference-guides/integrations-in-rancher/cis-scans/custom-benchmark",
+                     ],
+            },
+            {
+              type: 'category',
+              label: 'Fleet',
+              items: [
+                "reference-guides/integrations-in-rancher/fleet/gitops-at-scale",
+                "reference-guides/integrations-in-rancher/fleet/architecture",
+                "reference-guides/integrations-in-rancher/fleet/windows-support",
+                "reference-guides/integrations-in-rancher/fleet/use-fleet-behind-a-proxy",
+                    ]
+            },
+                "reference-guides/integrations-in-rancher/harvester",
+            {
+              type: 'category',
+              label: 'Istio',
+              items: [ 
+                {
+                  type: 'category',
+                  label: 'About Istio',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/about-istio",
+                  },
+                  items: [
+                    "reference-guides/integrations-in-rancher/istio/about-istio/cpu-and-memory-allocations",
+                    "reference-guides/integrations-in-rancher/istio/about-istio/rbac-for-istio",
+                    "reference-guides/integrations-in-rancher/istio/about-istio/disable-istio",
+                        ]
+                },
+                {
+                  type: 'category',
+                  label: 'Configuration Options',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/configuration-options",
+                  },
+                  items: [
+                    "reference-guides/integrations-in-rancher/istio/configuration-options/pod-security-policies",
+                    "reference-guides/integrations-in-rancher/istio/configuration-options/selectors-and-scrape-configurations",
+                    "reference-guides/integrations-in-rancher/istio/configuration-options/install-istio-on-rke2-cluster",
+                    "reference-guides/integrations-in-rancher/istio/configuration-options/project-network-isolation",
+                        ]
+                      }
+                    ]
+            },
+                "reference-guides/integrations-in-rancher/longhorn",
+            {
+              type: 'category',
+              label: 'Logging',
+              items: [ 
+                {
+                  type: 'category',
+                  label: 'About Logging',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/about-logging",
+                  },
+                  items: [
+                    "reference-guides/integrations-in-rancher/logging/about-logging/logging-architecture",
+                    "reference-guides/integrations-in-rancher/logging/about-logging/migrate-to-rancher-v2.5+-logging",
+                    "reference-guides/integrations-in-rancher/logging/about-logging/rbac-for-logging",
+                    "reference-guides/integrations-in-rancher/logging/about-logging/logging-helm-chart-options",
+                    "reference-guides/integrations-in-rancher/logging/about-logging/taints-and-tolerations",
+                        ]
+                },
+                {
+                  type: 'category',
+                  label: 'Custom Resource Configuration',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/custom-resource-configuration",
+                  },
+                  items: [
+                    "reference-guides/integrations-in-rancher/logging/custom-resource-configuration/flows-and-clusterflows",
+                    "reference-guides/integrations-in-rancher/logging/custom-resource-configuration/outputs-and-clusteroutputs"
+                        ]
+                        }
+                      ]
+            },
+            {
+              type: 'category',
+              label: 'Monitoring and Alerting',
+              link: {
+                type: "doc",
+                id: "pages-for-subheaders/monitoring-and-alerting",
+                    },
+              items: [
+                "reference-guides/integrations-in-rancher/monitoring-and-alerting/how-monitoring-works",
+                "reference-guides/integrations-in-rancher/monitoring-and-alerting/rbac-for-monitoring",
+                "reference-guides/integrations-in-rancher/monitoring-and-alerting/built-in-dashboards",
+                "reference-guides/integrations-in-rancher/monitoring-and-alerting/windows-support",
+                "reference-guides/integrations-in-rancher/monitoring-and-alerting/promql-expressions",
+                "reference-guides/integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
+                    ]
+            },
+                "reference-guides/integrations-in-rancher/neuvector",
+            
+                "reference-guides/integrations-in-rancher/opa-gatekeeper",
+         ]
+        },      
+        {
+          type: 'category',
           label: 'Architecture',
           items: [
             {
@@ -1118,127 +1239,6 @@ const sidebars = {
                   ],
                 }
               ]
-            },                                                   
-    {
-      type: 'category',
-      label: 'Integrations in Rancher',
-      link: {
-        type: 'doc',
-        id: "integrations-in-rancher",
-      },
-      items: [ 
-        {
-          type: 'category',
-          label: 'CIS Scans',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/cis-scans",
-          },
-          items: [
-            "integrations-in-rancher/cis-scans/configuration-reference",
-            "integrations-in-rancher/cis-scans/rbac-for-cis-scans",
-            "integrations-in-rancher/cis-scans/skipped-and-not-applicable-tests",
-            "integrations-in-rancher/cis-scans/custom-benchmark",
-                 ],
-        },
-        {
-          type: 'category',
-          label: 'Fleet',
-          items: [
-            "integrations-in-rancher/fleet/gitops-at-scale",
-            "integrations-in-rancher/fleet/architecture",
-            "integrations-in-rancher/fleet/windows-support",
-            "integrations-in-rancher/fleet/use-fleet-behind-a-proxy",
-                 ]
-        },
-            "integrations-in-rancher/harvester",
-        {
-          type: 'category',
-          label: 'Istio',
-          items: [ 
-            {
-              type: 'category',
-              label: 'About Istio',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/about-istio",
-              },
-              items: [
-                "integrations-in-rancher/istio/about-istio/cpu-and-memory-allocations",
-                "integrations-in-rancher/istio/about-istio/rbac-for-istio",
-                "integrations-in-rancher/istio/about-istio/disable-istio",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Configuration Options',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/configuration-options",
-              },
-              items: [
-                "integrations-in-rancher/istio/configuration-options/pod-security-policies",
-                "integrations-in-rancher/istio/configuration-options/selectors-and-scrape-configurations",
-                "integrations-in-rancher/istio/configuration-options/install-istio-on-rke2-cluster",
-                "integrations-in-rancher/istio/configuration-options/project-network-isolation",
-                     ]
-                   }
-                 ]
-        },
-            "integrations-in-rancher/longhorn",
-        {
-          type: 'category',
-          label: 'Logging',
-          items: [ 
-            {
-              type: 'category',
-              label: 'About Logging',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/about-logging",
-              },
-              items: [
-                "integrations-in-rancher/logging/about-logging/logging-architecture",
-                "integrations-in-rancher/logging/about-logging/migrate-to-rancher-v2.5+-logging",
-                "integrations-in-rancher/logging/about-logging/rbac-for-logging",
-                "integrations-in-rancher/logging/about-logging/logging-helm-chart-options",
-                "integrations-in-rancher/logging/about-logging/taints-and-tolerations",
-                     ]
-            },
-            {
-              type: 'category',
-              label: 'Custom Resource Configuration',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/custom-resource-configuration",
-              },
-              items: [
-                "integrations-in-rancher/logging/custom-resource-configuration/flows-and-clusterflows",
-                "integrations-in-rancher/logging/custom-resource-configuration/outputs-and-clusteroutputs"
-                     ]
-                    }
-                  ]
-        },
-        {
-          type: 'category',
-          label: 'Monitoring and Alerting',
-          link: {
-            type: "doc",
-            id: "pages-for-subheaders/monitoring-and-alerting",
-                },
-          items: [
-            "integrations-in-rancher/monitoring-and-alerting/how-monitoring-works",
-            "integrations-in-rancher/monitoring-and-alerting/rbac-for-monitoring",
-            "integrations-in-rancher/monitoring-and-alerting/built-in-dashboards",
-            "integrations-in-rancher/monitoring-and-alerting/windows-support",
-            "integrations-in-rancher/monitoring-and-alerting/promql-expressions",
-            "integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
-                 ]
-        },
-            "integrations-in-rancher/neuvector",
-        
-            "integrations-in-rancher/opa-gatekeeper",
-      ]
     },
     {
       type: 'category',
