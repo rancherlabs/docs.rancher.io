@@ -11,6 +11,7 @@ In our docs, we have used this guideline to craft a unique set of docs which inc
     - [New User Guides](#new-user-guides)
     - [Advanced User Guides](#advanced-user-guides)
 - [Reference Guides](#reference-guides)
+    - [Integrations in Rancher](#integrations-in-rancher)
 - [Other Docs Categories](#other-docs-categories)
     - [FAQ](#faq)
     - [Troubleshooting](#troubleshooting)

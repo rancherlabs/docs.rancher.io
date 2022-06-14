@@ -1,3 +1,0 @@
----
-title: RBAC for Istio
----

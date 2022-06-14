@@ -1,3 +1,0 @@
----
-title: Taints and Tolerations
----
