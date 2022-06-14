@@ -375,6 +375,10 @@ const sidebars = {
                                   {
                                     type: 'category',
                                     label: 'Other Cloud Providers',
+                                    link: {
+                                      type: 'doc',
+                                      id: "pages-for-subheaders/other-cloud-providers",
+                                    },
                                     items: [
                                       "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/other-cloud-providers/amazon",
                                       "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/set-up-cloud-providers/other-cloud-providers/azure",
@@ -673,6 +677,10 @@ const sidebars = {
                           {
                           type: 'category',
                           label: 'Manage Persistent Storage',
+                          link: {
+                            type: 'doc',
+                            id: "pages-for-subheaders/manage-persistent-storage",
+                          },
                           items: [
                           "how-to-guides/advanced-user-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/about-persistent-storage",
                           "how-to-guides/advanced-user-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/set-up-existing-storage",
