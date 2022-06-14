@@ -865,7 +865,7 @@ const sidebars = {
           label: 'Integrations in Rancher',
           link: {
             type: 'doc',
-            id: "integrations-in-rancher",
+            id: "pages-for-subheaders/integrations-in-rancher",
                 },
             items: [ 
             {
