@@ -533,6 +533,10 @@ const sidebars = {
                             {
                             type: 'category',
                             label: 'Authentication Config',
+                            link: {
+                              type: 'doc',
+                              id: "pages-for-subheaders/authentication-config",
+                            },
                             items: [
                                  "how-to-guides/advanced-user-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/manage-users-and-groups",
                                  "how-to-guides/advanced-user-guides/authentication-permissions-and-global-configuration/about-authentication/authentication-config/create-local-users",
@@ -974,21 +978,15 @@ const sidebars = {
         },     
         {
           type: 'category',
-          label: 'Architecture',
-          items: [
-            {
-              type: 'category',
-              label: 'Rancher Manager Architecture',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/rancher-manager-architecture",
-              },
-              items: [
-                 "reference-guides/architecture/rancher-manager-architecture/rancher-server-and-components",
-                 "reference-guides/architecture/rancher-manager-architecture/communicating-with-downstream-user-clusters",
-                    ]
-              },
-                 "reference-guides/architecture/architecture-recommendations",
+          label: 'Rancher Manager Architecture',
+          link: {
+            type: 'doc',
+            id: "pages-for-subheaders/rancher-manager-architecture",
+                },
+            items: [
+                 "reference-guides/rancher-manager-architecture/rancher-server-and-components",
+                 "reference-guides/rancher-manager-architecture/communicating-with-downstream-user-clusters",
+                 "reference-guides/rancher-manager-architecture/architecture-recommendations",
                        ]
         },
         {
@@ -1001,52 +999,76 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Rancher Server',
+              label: 'Rancher Server Configuration',
+              link: {
+                type: 'doc',
+                id: "pages-for-subheaders/rancher-server-configuration",
+              },
               items: [
-                "reference-guides/cluster-configuration/rancher-server/rke1-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server/rke2-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server/k3s-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server/eks-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server/aks-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server-configuration/rke1-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server-configuration/rke2-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server-configuration/k3s-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server-configuration/eks-cluster-configuration",
+                "reference-guides/cluster-configuration/rancher-server-configuration/aks-cluster-configuration",
                 {
                   type: 'category',
-                  label: 'GKE',
+                  label: 'GKE Cluster Configuration',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/gke-cluster-configuration",
+                  },
                   items: [
-                    "reference-guides/cluster-configuration/rancher-server/gke/gke-private-clusters",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/gke-cluster-configuration/gke-private-clusters",
                   ]
                 },
                 {
                   type: 'category',
                   label: 'Use Existing Nodes',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/use-existing-nodes",
+                  },
                   items: [
-                    "reference-guides/cluster-configuration/rancher-server/use-existing-nodes/rancher-agent-options",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/use-existing-nodes/rancher-agent-options",
                    ]
           },
-                "reference-guides/cluster-configuration/rancher-server/sync-clusters",
+                "reference-guides/cluster-configuration/rancher-server-configuration/sync-clusters",
                       ]
                   },
             {
               type: 'category',
-              label: 'Downstream Clusters',
+              label: 'Downstream Cluster Configuration',
+              link: {
+                type: 'doc',
+                id: "pages-for-subheaders/downstream-cluster-configuration",
+              },
               items: [
                 {
                   type: 'category',
                   label: 'Node Template Configuration',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/node-template-configuration",
+                  },
                   items: [ 
-                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/amazon-ec2",
-                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/digitalocean",
-                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/azure", 
-                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/vsphere",
-                    "reference-guides/cluster-configuration/downstream-clusters/node-template-configuration/nutanix",
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/node-template-configuration/amazon-ec2",
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/node-template-configuration/digitalocean",
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/node-template-configuration/azure", 
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/node-template-configuration/vsphere",
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/node-template-configuration/nutanix",
                           ]
                 },
                 {
                   type: 'category',
                   label: 'Machine Configuration',
+                  link: {
+                    type: 'doc',
+                    id: "pages-for-subheaders/machine-configuration",
+                  },
                   items: [ 
-                    "reference-guides/cluster-configuration/downstream-clusters/machine-configuration/amazon-ec2",
-                    "reference-guides/cluster-configuration/downstream-clusters/machine-configuration/digitalocean",
-                    "reference-guides/cluster-configuration/downstream-clusters/machine-configuration/azure", 
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/machine-configuration/amazon-ec2",
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/machine-configuration/digitalocean",
+                    "reference-guides/cluster-configuration/downstream-cluster-configuration/machine-configuration/azure", 
                          ]
                         }
                       ]
@@ -1056,6 +1078,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Single-Node Rancher in Docker',
+          link: {
+            type: 'doc',
+            id: "pages-for-subheaders/single-node-rancher-in-docker",
+          },
           items: [
            "reference-guides/single-node-rancher-in-docker/http-proxy-configuration",
            "reference-guides/single-node-rancher-in-docker/advanced-options",
@@ -1064,6 +1090,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Installation References',
+          link: {
+            type: 'doc',
+            id: "pages-for-subheaders/installation-references",
+          },
           items: [
            "reference-guides/installation-references/helm-chart-options",
            "reference-guides/installation-references/tls-settings",
@@ -1072,20 +1102,14 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Permissions',
-          items: [
-            {
-              type: 'category',
-              label: 'Amazon EKS',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/amazon-eks",
+          label: 'Amazon EKS Permissions',
+          link: {
+            type: 'doc',
+            id: "pages-for-subheaders/amazon-eks-permissions",
                     }, 
-              items: [
-                "reference-guides/permissions/amazon-eks/minimum-eks-permissions",
+            items: [
+                "reference-guides/amazon-eks-permissions/minimum-eks-permissions",
                      ]
-            }
-                ]
         },               
         {
           type: 'category',
@@ -1097,7 +1121,8 @@ const sidebars = {
           items: [
                  "reference-guides/backup-restore-configuration/backup-configuration",
                  "reference-guides/backup-restore-configuration/restore-configuration",
-                 "reference-guides/backup-restore-configuration/storage-configuration", 
+                 "reference-guides/backup-restore-configuration/storage-configuration",
+                 "reference-guides/backup-restore-configuration/examples", 
                  ],
         },
         {
@@ -1164,20 +1189,10 @@ const sidebars = {
             "reference-guides/about-the-api/api-tokens",
                  ]
         },
-        {
-          type: 'category',
-          label: 'Rancher Cluster Tools',
-          items: [
-            "reference-guides/rancher-cluster-tools/cluster-logging-monitoring-and-visibility-tools",
-                 ],
-        },
-        {
-          type: 'category',
-          label: 'Rancher Project Tools',
-          items: [
-            "reference-guides/rancher-project-tools/project-logging-monitoring-and-visibility-tools",     
-                 ],         
-        },
+            "reference-guides/rancher-cluster-tools",
+                
+            "reference-guides/rancher-project-tools", 
+          
             "reference-guides/system-tools", 
 
             "reference-guides/rke1-template-example-yaml",     
@@ -1278,6 +1293,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Other Troubleshooting Tips',
+          link: {
+            type: 'doc',
+            id: "pages-for-subheaders/other-troubleshooting-tips",
+          },
           items: [
             "troubleshooting/other-troubleshooting-tips/kubernetes-resources",
             "troubleshooting/other-troubleshooting-tips/networking",

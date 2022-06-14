@@ -1,3 +1,0 @@
----
-title: Minimum EKS Permissions
----

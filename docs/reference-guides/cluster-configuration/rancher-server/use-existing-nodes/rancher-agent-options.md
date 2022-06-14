@@ -1,3 +1,0 @@
----
-title: Rancher Agent Options
----
