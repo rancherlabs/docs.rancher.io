@@ -4,7 +4,7 @@ title: What Are Divio Docs?
 
 The [Divio documentation system](https://documentation.divio.com/) is a software documentation paradigm that is based on functionality and the premise that the best documentation is specific, concise, and useful. Divio traditionally consists of four main categories: tutorials, how-to guides, reference guides, and explanations. 
 
-In our docs, we have used this guideline to craft a unique set of docs which include [getting started](#getting-started), [how-to guides](#how-to-guides) (including new and advanced user guides), [reference guides](#reference-guides), [integrations in Rancher](#integrations-in-rancher), [FAQ](#faq), [troubleshooting](#troubleshooting), and the ability to [contribute to Rancher](#contribute-to-rancher). 
+In our docs, we have used this guideline to craft a unique set of docs which include [getting started](../docs/getting-started.md), [how-to guides](../docs/how-to-guides.md) (including [new](../docs/pages-for-subheaders/new-user-guides.md) and [advanced user guides](../docs/pages-for-subheaders/advanced-user-guides.md)), [reference guides](../docs/reference-guides.md), [FAQ](../docs/faq.md), [troubleshooting](../docs/troubleshooting.md), and the ability to [contribute to Rancher](../docs/contribute-to-rancher.md). 
 
 - [Getting Started](#getting-started)
 - [How-to Guides](#how-to-guides)
@@ -12,7 +12,6 @@ In our docs, we have used this guideline to craft a unique set of docs which inc
     - [Advanced User Guides](#advanced-user-guides)
 - [Reference Guides](#reference-guides)
 - [Other Docs Categories](#other-docs-categories)
-    - [Integrations in Rancher](#integrations-in-rancher)
     - [FAQ](#faq)
     - [Troubleshooting](#troubleshooting)
     - [Contribute to Rancher](#contribute-to-rancher)
@@ -26,7 +25,7 @@ One of the most critical sections for many software documentation users is argua
 
 The goal of this section is to be able to assist users in deploying Rancher and workloads and to install or upgrade Rancher quickly and effectively.
 
-Some example docs that are integral to getting started would be [understanding installation requirements](https://rancher.com/docs/rancher/v2.6/en/installation/requirements/) and [understanding resource options to run Rancher](https://rancher.com/docs/rancher/v2.6/en/installation/resources/).
+Some example docs that are integral to getting started would be [understanding installation requirements](../docs/pages-for-subheaders/installation-requirements.md) and [understanding resource options to run Rancher](../docs/pages-for-subheaders/resources.md).
 
 ## How-to Guides
 
@@ -40,7 +39,7 @@ The new user guides are designed to guide beginners, or the everyday users of Ra
 
 The average Rancher user has a level of technical skill that is above the level of "beginner"; however, the new user guides are designed to help new, or beginner, users as well as the seasoned Rancher customer equally. This is accomplished by using a combination of high-level and technical language to introduce topics and guide the user through general tasks that are essential for every Rancher user to know.
 
-A good example of a new user guide can be found [here](https://rancher.com/docs/rancher/v2.6/en/k8s-in-rancher/workloads/deploy-workloads/).
+A good example of a new user guide can be found [here](../docs/how-to-guides/new-user-guides/kubernetes-resources-setup/workloads-and-pods/deploy-workloads.md).
 
 ### Advanced User Guides
 
@@ -48,7 +47,7 @@ Advanced user guides are "problem-oriented" docs in which users learn how to ans
 
 It should be noted that neither new user guides nor advanced user guides provide detailed explanations or discussions (these kinds of docs belong elsewhere). How-to guides focus on the action of guiding users through repeatable, effective steps to learn new skills, master some task, or overcome some problem.
 
-A good example of an advanced user guide can be found [here](https://rancher.com/docs/rancher/v2.6/en/cluster-admin/volumes-and-storage/provisioning-new-storage/).
+A good example of an advanced user guide can be found [here](../docs/how-to-guides/advanced-user-guides/manage-clusters/create-kubernetes-persistent-storage/manage-persistent-storage/dynamically-provision-new-storage.md).
 
 ## Reference Guides
 
@@ -58,27 +57,25 @@ These docs may also include some usage steps in the course of description; howev
 
 The users who utilize reference guides are knowledgeable with the Rancher product as well as how to use it. They will benefit from detailed descriptions of something to be used when needing to refer to specifics of usage.
 
-Good examples of Rancher reference guides would be [the Rancher Manager architecture](https://rancher.com/docs/rancher/v2.6/en/overview/architecture/) and [cluster configuration guides](https://rancher.com/docs/rancher/v2.6/en/cluster-admin/editing-clusters/).
-
-## Other Docs Categories
+Good examples of Rancher reference guides would be the [Rancher Manager architecture](../docs/pages-for-subheaders/rancher-manager-architecture.md) and [cluster configuration guides](../docs/pages-for-subheaders/cluster-configuration.md).
 
 ### Integrations in Rancher
 
-Over time, Rancher has accrued several products and projects that have been integrated into the Rancher UI. To assist users in learning more about these integrations as well as how they function in the Rancher UI, this section has been dedicated to them. 
+Over time, Rancher has accrued several products and projects that have been integrated into the Rancher UI. To assist users in learning more about these [integrations](../docs/pages-for-subheaders/integrations-in-rancher.md), this subsection has been added under **references**. 
 
-These docs are geared toward both new and existing Rancher users and provide detailed descriptions of the products as well as how they work within the Rancher UI. The purpose of these docs is to provide users what the product is and does, how it works at a high level, some prodecural steps to installing and using the product, and why it enhances the Rancher user experience.
+Examples of some of these integrations are [Harvester](../docs/reference-guides/integrations-in-rancher/harvester.md) and [NeuVector](../docs/reference-guides/integrations-in-rancher/neuvector.md). 
 
-Examples of some of these integrations are [Harvester](https://rancher.com/docs/rancher/v2.6/en/virtualization-admin/) and [NeuVector](https://rancher.com/docs/rancher/v2.6/en/neuvector-integration/). 
+## Other Docs Categories
 
 ### FAQ
 
-Our [FAQ](https://rancher.com/docs/rancher/v2.6/en/faq/) section is designed to answer the questions our users have been most often asking about Rancher v2.x. The nature of these questions may be technical or non-technical.
+Our [FAQ](../docs/faq.md) section is designed to answer the questions our users have been most often asking about Rancher v2.x. The nature of these questions may be technical or non-technical.
 
 We work to continually add to and enhance this section; check back frequently for updates.
 
 ### Troubleshooting
 
-The [troubleshooting section](https://rancher.com/docs/rancher/v2.6/en/troubleshooting/) is designed to help both new and existing Rancher users to troubleshoot known issues that they may encounter when using Rancher.
+The [troubleshooting section](../docs/troubleshooting.md) is designed to help both new and existing Rancher users to troubleshoot known issues that they may encounter when using Rancher.
 
 We work to continually add to and enhance this section; check back frequently for updates.
 
@@ -86,7 +83,7 @@ We work to continually add to and enhance this section; check back frequently fo
 
 The Rancher Manager documentation is always a work-in-progress; the docs work best when being constantly examined, updated, and improved upon. To do this more effectively, we call upon the community to assist us.
 
-This [section](https://rancher.com/docs/rancher/v2.6/en/contributing/) will instruct users on the repositories used for Rancher, how to build the repositories, and what information is needed when filing an issue or creating a pull request. 
+This [contributing to Rancher section](../docs/contribute-to-rancher.md) will instruct users on the repositories used for Rancher, how to build the repositories, and what information is needed when filing an issue or creating a pull request. 
 
 We review all contributions frequently and will provide feedback to contributors promptly.
 

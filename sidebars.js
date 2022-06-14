@@ -1003,6 +1003,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Cluster Configuration',
+          link: {
+            type: 'doc',
+            id: "pages-for-subheaders/cluster-configuration",
+          },
           items: [
             {
               type: 'category',
