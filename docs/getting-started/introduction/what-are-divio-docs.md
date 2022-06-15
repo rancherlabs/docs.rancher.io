@@ -4,7 +4,7 @@ title: What Are Divio Docs?
 
 The [Divio documentation system](https://documentation.divio.com/) is a software documentation paradigm that is based on functionality and the premise that the best documentation is specific, concise, and useful. Divio traditionally consists of four main categories: tutorials, how-to guides, reference guides, and explanations. 
 
-In our docs, we have used this guideline to craft a unique set of docs which include [getting started](../../getting-started.md), [how-to guides](../../how-to-guides.md) (including [new](../../pages-for-subheaders/new-user-guides.md) and [advanced user guides](../../pages-for-subheaders/advanced-user-guides.md), [reference guides](../../reference-guides.md), [FAQ](../../faq.md), [troubleshooting](../../troubleshooting.md), and the ability to [contribute to Rancher](../../contribute-to-rancher.md). 
+In our docs, we have used this guideline to craft a unique set of docs which include [getting started](../../getting-started.md), [how-to guides](../../how-to-guides.md) (including [new](../../pages-for-subheaders/new-user-guides.md) and [advanced user guides](../../pages-for-subheaders/advanced-user-guides.md)), [reference guides](../../reference-guides.md), an [FAQ section](../../faq.md), [troubleshooting tips](../../troubleshooting.md), and the ability to [contribute to Rancher](../../contribute-to-rancher.md). 
 
 - [Getting Started](#getting-started)
 - [How-to Guides](#how-to-guides)
