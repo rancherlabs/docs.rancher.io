@@ -26,3 +26,9 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.searchBox_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar-Search-styles-module {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
