@@ -22,11 +22,11 @@ In our docs, we have used this guideline to craft a unique set of docs which inc
 
 ## Getting Started
 
-One of the most critical sections for many software documentation users is arguably the "Getting Started" section. Often users simply want to be able to begin working as soon as possible without additional detailed or explanatory information as well. For these users, we have a getting started section that includes an introductory overview of the Rancher Manager product, quick start guides, and guides to install and upgrade Rancher.
+To get up and running with Rancher quickly, we have included a **Getting Started** section.
 
 The goal of this section is to be able to assist users in deploying Rancher and workloads and to install or upgrade Rancher quickly and effectively.
 
-Some example docs that are integral to getting started would be [understanding installation requirements](../../pages-for-subheaders/installation-requirements.md) and [understanding resource options to run Rancher](../../pages-for-subheaders/resources.md).
+Please see the [introduction](../docs/pages-for-subheaders/introduction.md), [quick start guides](../docs/pages-for-subheaders/quick-start-guides.md), and the [installation and upgrade](../docs/pages-for-subheaders/installation-and-upgrade.md) sections for more.
 
 ## How-to Guides
 
