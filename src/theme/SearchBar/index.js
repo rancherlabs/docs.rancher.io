@@ -97,7 +97,7 @@ const Search = props => {
       <input
         id="search_input_react"
         type="search"
-        placeholder={indexReady ? 'Search' : 'Loading...'}
+        placeholder={indexReady ? 'Search' : 'Ask me something...'}
         aria-label="Search"
         className={classnames(
           "navbar__search-input",
