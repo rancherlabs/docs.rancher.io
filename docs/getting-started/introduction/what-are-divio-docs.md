@@ -4,14 +4,15 @@ title: What Are Divio Docs?
 
 The [Divio documentation system](https://documentation.divio.com/) is a software documentation paradigm that is based on functionality and the premise that the best documentation is specific, concise, and useful. Divio traditionally consists of four main categories: tutorials, how-to guides, reference guides, and explanations. 
 
-In our docs, we have used this guideline to craft a unique set of docs which include [getting started](../../getting-started.md), [how-to guides](../../how-to-guides.md) (including [new](../../pages-for-subheaders/new-user-guides.md) and [advanced user guides](../../pages-for-subheaders/advanced-user-guides.md)), [reference guides](../../reference-guides.md), an [FAQ section](../../faq.md), [troubleshooting tips](../../troubleshooting.md), and the ability to [contribute to Rancher](../../contribute-to-rancher.md). 
+In our docs, we have used this guideline to craft a unique set of docs which include [getting started](../../getting-started.md), [how-to guides](../../how-to-guides.md) (including [new](../../pages-for-subheaders/new-user-guides.md) and [advanced user guides](../../pages-for-subheaders/advanced-user-guides.md)), [reference guides](../../reference-guides.md), [explanations](../..explanations.md), an [FAQ section](../../faq.md), [troubleshooting tips](../../troubleshooting.md), and the ability to [contribute to Rancher](../../contribute-to-rancher.md). 
 
 - [Getting Started](#getting-started)
 - [How-to Guides](#how-to-guides)
     - [New User Guides](#new-user-guides)
     - [Advanced User Guides](#advanced-user-guides)
 - [Reference Guides](#reference-guides)
-    - [Integrations in Rancher](#integrations-in-rancher)
+- [Explanations](#explanations)
+    - [Integrations in Rancher](#integrations-in-rancher)    
 - [Other Docs Categories](#other-docs-categories)
     - [FAQ](#faq)
     - [Troubleshooting](#troubleshooting)
@@ -60,11 +61,19 @@ The users who utilize reference guides are knowledgeable with the Rancher produc
 
 Good examples of Rancher reference guides would be the [Rancher Manager architecture](../../pages-for-subheaders/rancher-manager-architecture.md) and [cluster configuration guides](../../pages-for-subheaders/cluster-configuration.md).
 
+## Explanations
+
+Explanation docs are concerned primarily with providing theoretical knowledge for the "why" behind a task or a topic. Explanations are "understanding-oriented" in nature and will clarify a topic in order to broaden the user's knowledge. In this section, users can find additional context and background, alternatives or even opinions on topics, and often historical reasons, constraints, and insights into why a process works the way that it does.
+
+Explanatory docs do not instruct the user how to do something, as in tutorials and how-to guides, nor do they give detailed descriptions as references do. Explanations serve to give substance and background on both simple and complex topics.
+
+For our new docs, we are working to build up this section as most of our previous documentation was process-oriented rather than discussion-oriented. Currently, we feature [Integrations in Rancher](../../pages-for-subheaders/integrations-in-rancher.md) to discuss our integrated products.
+
 ### Integrations in Rancher
 
 Over time, Rancher has accrued several products and projects that have been integrated into the Rancher UI. To assist users in learning more about these [integrations](../../pages-for-subheaders/integrations-in-rancher.md), this subsection has been added under **references**. 
 
-Examples of some of these integrations are [Harvester](../../reference-guides/integrations-in-rancher/harvester.md) and [NeuVector](../../reference-guides/integrations-in-rancher/neuvector.md). 
+Examples of some of these integrations are [Harvester](../../explanations/integrations-in-rancher/harvester.md) and [NeuVector](../../explanations/integrations-in-rancher/neuvector.md). 
 
 ## Other Docs Categories
 

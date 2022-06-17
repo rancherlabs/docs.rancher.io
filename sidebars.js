@@ -869,167 +869,53 @@ const sidebars = {
                     "reference-guides/best-practices/rancher-managed-clusters/tips-to-set-up-containers",
                     "reference-guides/best-practices/rancher-managed-clusters/rancher-managed-clusters-in-vsphere"
                     ]
-                  }
-                ]
-              },
-        {
-          type: 'category',
-          label: 'Integrations in Rancher',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/integrations-in-rancher",
-                },
-            items: [ 
-            {
+           },     
+           {
               type: 'category',
-              label: 'CIS Scans',
+              label: 'Rancher Manager Architecture',
               link: {
                 type: 'doc',
-                id: "pages-for-subheaders/cis-scans",
-                    },
-              items: [
-                  "reference-guides/integrations-in-rancher/cis-scans/configuration-reference",
-                  "reference-guides/integrations-in-rancher/cis-scans/rbac-for-cis-scans",
-                  "reference-guides/integrations-in-rancher/cis-scans/skipped-and-not-applicable-tests",
-                  "reference-guides/integrations-in-rancher/cis-scans/custom-benchmark",
-                     ],
-            },
-            {
-              type: 'category',
-              label: 'Fleet - GitOps at Scale',
-              link: { 
-                type: 'doc',
-                id: "pages-for-subheaders/fleet-gitops-at-scale",
-                    },
-              items: [
-                "reference-guides/integrations-in-rancher/fleet-gitops-at-scale/architecture",
-                "reference-guides/integrations-in-rancher/fleet-gitops-at-scale/windows-support",
-                "reference-guides/integrations-in-rancher/fleet-gitops-at-scale/use-fleet-behind-a-proxy",
-                    ]
-            },
-                "reference-guides/integrations-in-rancher/harvester",
-            {
-              type: 'category',
-              label: 'Istio',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/istio",
+                id: "pages-for-subheaders/rancher-manager-architecture",
                     },
                 items: [
-                    "reference-guides/integrations-in-rancher/istio/cpu-and-memory-allocations",
-                    "reference-guides/integrations-in-rancher/istio/rbac-for-istio",
-                    "reference-guides/integrations-in-rancher/istio/disable-istio",
-                     {
-                      type: 'category',
-                      label: 'Configuration Options',
-                      link: {
-                        type: 'doc',
-                        id: "pages-for-subheaders/configuration-options",
-                            },
-                      items: [
-                            "reference-guides/integrations-in-rancher/istio/configuration-options/pod-security-policies",
-                            "reference-guides/integrations-in-rancher/istio/configuration-options/selectors-and-scrape-configurations",
-                            "reference-guides/integrations-in-rancher/istio/configuration-options/install-istio-on-rke2-cluster",
-                            "reference-guides/integrations-in-rancher/istio/configuration-options/project-network-isolation",
-                             ]
-                     }
-                    ]                          
-            },
-                "reference-guides/integrations-in-rancher/longhorn",
-            {
-              type: 'category',
-              label: 'Logging',
-              link: {
-                type: 'doc',
-                id: "pages-for-subheaders/logging",
-                    },
-                  items: [
-                    "reference-guides/integrations-in-rancher/logging/logging-architecture",
-                    "reference-guides/integrations-in-rancher/logging/migrate-to-rancher-v2.5+-logging",
-                    "reference-guides/integrations-in-rancher/logging/rbac-for-logging",
-                    "reference-guides/integrations-in-rancher/logging/logging-helm-chart-options",
-                    "reference-guides/integrations-in-rancher/logging/taints-and-tolerations",
-                      {
-                        type: 'category',
-                        label: 'Custom Resource Configuration',
-                        link: {
-                          type: 'doc',
-                          id: "pages-for-subheaders/custom-resource-configuration",
-                              },
-                        items: [
-                              "reference-guides/integrations-in-rancher/logging/custom-resource-configuration/flows-and-clusterflows",
-                              "reference-guides/integrations-in-rancher/logging/custom-resource-configuration/outputs-and-clusteroutputs"
-                        ]
-                     }
-                        ]
-            },
-            {
-              type: 'category',
-              label: 'Monitoring and Alerting',
-              link: {
-                type: "doc",
-                id: "pages-for-subheaders/monitoring-and-alerting",
-                    },
-              items: [
-                "reference-guides/integrations-in-rancher/monitoring-and-alerting/how-monitoring-works",
-                "reference-guides/integrations-in-rancher/monitoring-and-alerting/rbac-for-monitoring",
-                "reference-guides/integrations-in-rancher/monitoring-and-alerting/built-in-dashboards",
-                "reference-guides/integrations-in-rancher/monitoring-and-alerting/windows-support",
-                "reference-guides/integrations-in-rancher/monitoring-and-alerting/promql-expressions",
-                "reference-guides/integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
-                    ]
-            },
-                "reference-guides/integrations-in-rancher/neuvector",
-            
-                "reference-guides/integrations-in-rancher/opa-gatekeeper", 
-          ]
-        },     
-        {
-          type: 'category',
-          label: 'Rancher Manager Architecture',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/rancher-manager-architecture",
-                },
-            items: [
-                 "reference-guides/rancher-manager-architecture/rancher-server-and-components",
-                 "reference-guides/rancher-manager-architecture/communicating-with-downstream-user-clusters",
-                 "reference-guides/rancher-manager-architecture/architecture-recommendations",
-                       ]
-        },
-        {
-          type: 'category',
-          label: 'Cluster Configuration',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/cluster-configuration",
+                    "reference-guides/rancher-manager-architecture/rancher-server-and-components",
+                    "reference-guides/rancher-manager-architecture/communicating-with-downstream-user-clusters",
+                    "reference-guides/rancher-manager-architecture/architecture-recommendations",
+                          ]
           },
-          items: [
-            {
+          {
               type: 'category',
-              label: 'Rancher Server Configuration',
+              label: 'Cluster Configuration',
               link: {
                 type: 'doc',
-                id: "pages-for-subheaders/rancher-server-configuration",
+                id: "pages-for-subheaders/cluster-configuration",
               },
               items: [
-                "reference-guides/cluster-configuration/rancher-server-configuration/rke1-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server-configuration/rke2-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server-configuration/k3s-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server-configuration/eks-cluster-configuration",
-                "reference-guides/cluster-configuration/rancher-server-configuration/aks-cluster-configuration",
                 {
                   type: 'category',
-                  label: 'GKE Cluster Configuration',
+                  label: 'Rancher Server Configuration',
                   link: {
                     type: 'doc',
-                    id: "pages-for-subheaders/gke-cluster-configuration",
+                    id: "pages-for-subheaders/rancher-server-configuration",
                   },
                   items: [
-                    "reference-guides/cluster-configuration/rancher-server-configuration/gke-cluster-configuration/gke-private-clusters",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/rke1-cluster-configuration",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/rke2-cluster-configuration",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/k3s-cluster-configuration",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/eks-cluster-configuration",
+                    "reference-guides/cluster-configuration/rancher-server-configuration/aks-cluster-configuration",
+                    {
+                      type: 'category',
+                      label: 'GKE Cluster Configuration',
+                      link: {
+                        type: 'doc',
+                        id: "pages-for-subheaders/gke-cluster-configuration",
+                      },
+                      items: [
+                        "reference-guides/cluster-configuration/rancher-server-configuration/gke-cluster-configuration/gke-private-clusters",
                   ]
-                },
-                {
+              },
+              {
                   type: 'category',
                   label: 'Use Existing Nodes',
                   link: {
@@ -1083,149 +969,149 @@ const sidebars = {
                     }
                   ]
                 },
-        {
-          type: 'category',
-          label: 'Single-Node Rancher in Docker',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/single-node-rancher-in-docker",
-          },
-          items: [
-           "reference-guides/single-node-rancher-in-docker/http-proxy-configuration",
-           "reference-guides/single-node-rancher-in-docker/advanced-options",
-                 ]
-        },
-        {
-          type: 'category',
-          label: 'Installation References',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/installation-references",
-          },
-          items: [
-           "reference-guides/installation-references/helm-chart-options",
-           "reference-guides/installation-references/tls-settings",
-           "reference-guides/installation-references/feature-flags"
-                 ]
-        },
-        {
-          type: 'category',
-          label: 'Amazon EKS Permissions',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/amazon-eks-permissions",
-                    }, 
+          {
+            type: 'category',
+            label: 'Single-Node Rancher in Docker',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/single-node-rancher-in-docker",
+            },
             items: [
-                "reference-guides/amazon-eks-permissions/minimum-eks-permissions",
-                     ]
-        },               
-        {
-          type: 'category',
-          label: 'Backup & Restore Configuration',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/backup-restore-configuration",
+            "reference-guides/single-node-rancher-in-docker/http-proxy-configuration",
+            "reference-guides/single-node-rancher-in-docker/advanced-options",
+                  ]
           },
-          items: [
-                 "reference-guides/backup-restore-configuration/backup-configuration",
-                 "reference-guides/backup-restore-configuration/restore-configuration",
-                 "reference-guides/backup-restore-configuration/storage-configuration",
-                 "reference-guides/backup-restore-configuration/examples", 
-                 ],
-        },
-        {
-          type: 'category',
-          label: 'Configure OpenLDAP',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/configure-openldap",
+          {
+            type: 'category',
+            label: 'Installation References',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/installation-references",
+            },
+            items: [
+            "reference-guides/installation-references/helm-chart-options",
+            "reference-guides/installation-references/tls-settings",
+            "reference-guides/installation-references/feature-flags"
+                  ]
           },
-          items: [
-                "reference-guides/configure-openldap/openldap-config-reference",
-                    ]
-        },               
-            "reference-guides/kubernetes-concepts",
-        {
-          type: 'category',
-          label: 'Monitoring V2 Configuration',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/monitoring-v2-configuration",
+          {
+            type: 'category',
+            label: 'Amazon EKS Permissions',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/amazon-eks-permissions",
+                      }, 
+              items: [
+                  "reference-guides/amazon-eks-permissions/minimum-eks-permissions",
+                      ]
+          },               
+          {
+            type: 'category',
+            label: 'Backup & Restore Configuration',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/backup-restore-configuration",
+            },
+            items: [
+                  "reference-guides/backup-restore-configuration/backup-configuration",
+                  "reference-guides/backup-restore-configuration/restore-configuration",
+                  "reference-guides/backup-restore-configuration/storage-configuration",
+                  "reference-guides/backup-restore-configuration/examples", 
+                  ],
           },
-          items: [
-            "reference-guides/monitoring-v2-configuration/receivers",
-            "reference-guides/monitoring-v2-configuration/routes",
-            "reference-guides/monitoring-v2-configuration/servicemonitors-and-podmonitors",
-            "reference-guides/monitoring-v2-configuration/helm-chart-options",
-            "reference-guides/monitoring-v2-configuration/examples",
-                   ],
-        },
-        {
-          type: 'category',
-          label: 'User Settings',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/user-settings",
+          {
+            type: 'category',
+            label: 'Configure OpenLDAP',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/configure-openldap",
+            },
+            items: [
+                  "reference-guides/configure-openldap/openldap-config-reference",
+                      ]
+          },               
+              "reference-guides/kubernetes-concepts",
+          {
+            type: 'category',
+            label: 'Monitoring V2 Configuration',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/monitoring-v2-configuration",
+            },
+            items: [
+              "reference-guides/monitoring-v2-configuration/receivers",
+              "reference-guides/monitoring-v2-configuration/routes",
+              "reference-guides/monitoring-v2-configuration/servicemonitors-and-podmonitors",
+              "reference-guides/monitoring-v2-configuration/helm-chart-options",
+              "reference-guides/monitoring-v2-configuration/examples",
+                    ],
           },
-          items: [
-            "reference-guides/user-settings/api-keys",
-            "reference-guides/user-settings/manage-node-templates",
-            "reference-guides/user-settings/manage-cloud-credentials",
-            "reference-guides/user-settings/user-preferences",
-                 ],
-        },
-        {
-          type: 'category',
-          label: 'CLI with Rancher',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/cli-with-rancher",
+          {
+            type: 'category',
+            label: 'User Settings',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/user-settings",
+            },
+            items: [
+              "reference-guides/user-settings/api-keys",
+              "reference-guides/user-settings/manage-node-templates",
+              "reference-guides/user-settings/manage-cloud-credentials",
+              "reference-guides/user-settings/user-preferences",
+                  ],
           },
-          items: [
-            "reference-guides/cli-with-rancher/rancher-cli",
-            "reference-guides/cli-with-rancher/kubectl-utility",
-                 ]
-        },
-        {
-          type: 'category',
-          label: 'About the API',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/about-the-api",
+          {
+            type: 'category',
+            label: 'CLI with Rancher',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/cli-with-rancher",
+            },
+            items: [
+              "reference-guides/cli-with-rancher/rancher-cli",
+              "reference-guides/cli-with-rancher/kubectl-utility",
+                  ]
           },
-          items: [
-            "reference-guides/about-the-api/api-tokens",
-                 ]
-        },
-            "reference-guides/rancher-cluster-tools",
-                
-            "reference-guides/rancher-project-tools", 
-          
-            "reference-guides/system-tools", 
+          {
+            type: 'category',
+            label: 'About the API',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/about-the-api",
+            },
+            items: [
+              "reference-guides/about-the-api/api-tokens",
+                  ]
+          },
+              "reference-guides/rancher-cluster-tools",
+                  
+              "reference-guides/rancher-project-tools", 
+            
+              "reference-guides/system-tools", 
 
-            "reference-guides/rke1-template-example-yaml",     
-        {
-          type: 'category',
-          label: 'Pipelines',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/pipelines",
-               },
-          items: [
-            "reference-guides/pipelines/concepts",
-            "reference-guides/pipelines/pipeline-configuration",
-            "reference-guides/pipelines/configure-persistent-data",
-            "reference-guides/pipelines/example-repositories",
-            "reference-guides/pipelines/example-yaml",
-                 ],
-        },
-        {
-          type: 'category',
-          label: 'Rancher Security',
-          link: {
-            type: 'doc',
-            id: "pages-for-subheaders/rancher-security",
+              "reference-guides/rke1-template-example-yaml",     
+          {
+            type: 'category',
+            label: 'Pipelines',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/pipelines",
+                },
+            items: [
+              "reference-guides/pipelines/concepts",
+              "reference-guides/pipelines/pipeline-configuration",
+              "reference-guides/pipelines/configure-persistent-data",
+              "reference-guides/pipelines/example-repositories",
+              "reference-guides/pipelines/example-yaml",
+                  ],
           },
+          {
+            type: 'category',
+            label: 'Rancher Security',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/rancher-security",
+            },
           items: [
             {
               type: 'category',
@@ -1257,7 +1143,131 @@ const sidebars = {
                   ],
                 }
               ]
+            }
+          ]
     },
+    {
+      type: 'category',
+      label: 'Explanations',
+      link: {
+        type: 'doc',
+        id: "explanations",
+      },
+      items: [
+      {
+        type: 'category',
+        label: 'Integrations in Rancher',
+        link: {
+          type: 'doc',
+          id: "pages-for-subheaders/integrations-in-rancher",
+              },
+          items: [ 
+            {
+            type: 'category',
+            label: 'CIS Scans',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/cis-scans",
+                  },
+            items: [
+                "explanations/integrations-in-rancher/cis-scans/configuration-reference",
+                "explanations/integrations-in-rancher/cis-scans/rbac-for-cis-scans",
+                "explanations/integrations-in-rancher/cis-scans/skipped-and-not-applicable-tests",
+                "explanations/integrations-in-rancher/cis-scans/custom-benchmark",
+                   ],
+            },
+            {
+            type: 'category',
+            label: 'Fleet - GitOps at Scale',
+            link: { 
+              type: 'doc',
+              id: "pages-for-subheaders/fleet-gitops-at-scale",
+                  },
+            items: [
+              "explanations/integrations-in-rancher/fleet-gitops-at-scale/architecture",
+              "explanations/integrations-in-rancher/fleet-gitops-at-scale/windows-support",
+              "explanations/integrations-in-rancher/fleet-gitops-at-scale/use-fleet-behind-a-proxy",
+                  ]
+            },
+              "explanations/integrations-in-rancher/harvester",
+            {
+            type: 'category',
+            label: 'Istio',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/istio",
+                  },
+              items: [
+                  "explanations/integrations-in-rancher/istio/cpu-and-memory-allocations",
+                  "explanations/integrations-in-rancher/istio/rbac-for-istio",
+                  "explanations/integrations-in-rancher/istio/disable-istio",
+                   {
+                    type: 'category',
+                    label: 'Configuration Options',
+                    link: {
+                      type: 'doc',
+                      id: "pages-for-subheaders/configuration-options",
+                          },
+                    items: [
+                          "explanations/integrations-in-rancher/istio/configuration-options/pod-security-policies",
+                          "explanations/integrations-in-rancher/istio/configuration-options/selectors-and-scrape-configurations",
+                          "explanations/integrations-in-rancher/istio/configuration-options/install-istio-on-rke2-cluster",
+                          "explanations/integrations-in-rancher/istio/configuration-options/project-network-isolation",
+                           ]
+                   }
+                  ]                          
+            },
+              "explanations/integrations-in-rancher/longhorn",
+            {
+            type: 'category',
+            label: 'Logging',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/logging",
+                  },
+                items: [
+                  "explanations/integrations-in-rancher/logging/logging-architecture",
+                  "explanations/integrations-in-rancher/logging/migrate-to-rancher-v2.5+-logging",
+                  "explanations/integrations-in-rancher/logging/rbac-for-logging",
+                  "explanations/integrations-in-rancher/logging/logging-helm-chart-options",
+                  "explanations/integrations-in-rancher/logging/taints-and-tolerations",
+                    {
+                      type: 'category',
+                      label: 'Custom Resource Configuration',
+                      link: {
+                        type: 'doc',
+                        id: "pages-for-subheaders/custom-resource-configuration",
+                            },
+                      items: [
+                            "explanations/integrations-in-rancher/logging/custom-resource-configuration/flows-and-clusterflows",
+                            "explanations/integrations-in-rancher/logging/custom-resource-configuration/outputs-and-clusteroutputs"
+                      ]
+                    }
+                  ]
+            },
+            {
+            type: 'category',
+            label: 'Monitoring and Alerting',
+            link: {
+              type: "doc",
+              id: "pages-for-subheaders/monitoring-and-alerting",
+                  },
+            items: [
+              "explanations/integrations-in-rancher/monitoring-and-alerting/how-monitoring-works",
+              "explanations/integrations-in-rancher/monitoring-and-alerting/rbac-for-monitoring",
+              "explanations/integrations-in-rancher/monitoring-and-alerting/built-in-dashboards",
+              "explanations/integrations-in-rancher/monitoring-and-alerting/windows-support",
+              "explanations/integrations-in-rancher/monitoring-and-alerting/promql-expressions",
+              "explanations/integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
+                  ]
+            },
+              "explanations/integrations-in-rancher/neuvector",
+          
+              "explanations/integrations-in-rancher/opa-gatekeeper", 
+                  ]
+                }
+              ]
+    }, 
     {
       type: 'category',
       label: 'FAQ',
@@ -1274,7 +1284,7 @@ const sidebars = {
         "faq/telemetry",
         "faq/container-network-interface-providers",
         "faq/rancher-is-no-longer-needed",
-      ],
+             ]
     },
     {
       type: 'category',
