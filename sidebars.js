@@ -869,6 +869,8 @@ const sidebars = {
                     "reference-guides/best-practices/rancher-managed-clusters/tips-to-set-up-containers",
                     "reference-guides/best-practices/rancher-managed-clusters/rancher-managed-clusters-in-vsphere"
                     ]
+                  }
+                ]
            },     
            {
               type: 'category',
@@ -1143,8 +1145,6 @@ const sidebars = {
                   ],
                 }
               ]
-            }
-          ]
     },
     {
       type: 'category',
