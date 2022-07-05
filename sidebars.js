@@ -316,40 +316,48 @@ const sidebars = {
                     link: {
                       type: 'doc',
                       id: "pages-for-subheaders/launch-kubernetes-with-rancher",
-                        },
+                          },
                     items: [
-                      {
+                         {
                           type: 'category',
                           label: 'Use New Nodes in an Infra Provider',
                           link: {
                             type: 'doc',
                             id: "pages-for-subheaders/use-new-nodes-in-an-infra-provider",
-                              },
-                              items: [
-                                  {
+                                },
+                            items: [
+                                    "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/create-an-amazon-ec2-cluster",  
+                                    
+                                    "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/create-a-digitalocean-cluster",
+                                
+                                    "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/create-an-azure-cluster",
+                                   {
                                     type: 'category',
                                     label: 'vSphere',
                                     link: {
                                       type: 'doc',
                                       id: "pages-for-subheaders/vsphere",
-                                    },
+                                          },
                                     items: [
                                       "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/provision-kubernetes-clusters-in-vsphere",
-                                      "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/create-credentials",     
+                                      "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/create-credentials",
+                                      "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/vsphere/create-a-vm-template",     
                                             ]
-                                  },
-                                  {
+                                },
+                                {
                                     type: 'category',
                                     label: 'Nutanix',
                                     link: {
                                       type: 'doc',
                                       id: "pages-for-subheaders/nutanix",
-                                    },
+                                          },
                                     items: [
                                       "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/provision-kubernetes-clusters-in-aos",          
                                           ]
-                                  }
-                                      ]
+                                }
+                            ]
+                          }
+                        ]      
                       },
                       {
                           type: 'category',
@@ -824,8 +832,6 @@ const sidebars = {
                   ]
                 }
               ]
-            }
-          ]
     },      
     {
       type: 'category',
