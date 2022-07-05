@@ -138,7 +138,8 @@ const sidebars = {
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/infrastructure-private-registry",
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/publish-images",
                           "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/install-kubernetes",
-                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/install-rancher-ha",    
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/install-rancher-ha",
+                          "getting-started/installation-and-upgrade/other-installation-methods/air-gapped-helm-cli-install/docker-install-commands",    
                            ]
                   },
                   {
@@ -184,6 +185,7 @@ const sidebars = {
                     "getting-started/installation-and-upgrade/resources/upgrade-cert-manager",
                     "getting-started/installation-and-upgrade/resources/update-rancher-certificate",
                     "getting-started/installation-and-upgrade/resources/bootstrap-password",
+                    "getting-started/installation-and-upgrade/resources/local-system-charts",
                      ]
             }, 
                     "getting-started/installation-and-upgrade/upgrade-and-roll-back-kubernetes",
@@ -354,10 +356,8 @@ const sidebars = {
                                     items: [
                                       "how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider/nutanix/provision-kubernetes-clusters-in-aos",          
                                           ]
-                                }
-                            ]
-                          }
-                        ]      
+                                        }
+                                      ]   
                       },
                       {
                           type: 'category',
@@ -746,15 +746,15 @@ const sidebars = {
                         link: {
                           type: 'doc',
                           id: "pages-for-subheaders/manage-project-resource-quotas",
-                        },
+                              },
                         items: [
                             "how-to-guides/advanced-user-guides/manage-projects/manage-project-resource-quotas/about-project-resource-quotas",
                             "how-to-guides/advanced-user-guides/manage-projects/manage-project-resource-quotas/override-default-limit-in-namespaces",
                             "how-to-guides/advanced-user-guides/manage-projects/manage-project-resource-quotas/set-container-default-resource-limits",
                             "how-to-guides/advanced-user-guides/manage-projects/manage-project-resource-quotas/resource-quota-types",
-                     ]
-                    }
-                  ]
+                        ]
+                      }
+                    ]
               },
               {
                 type: 'category',
@@ -762,7 +762,7 @@ const sidebars = {
                 link: {
                   type: 'doc',
                   id: "pages-for-subheaders/monitoring-alerting-guides",
-                },
+                      },
                 items: [
                     "how-to-guides/advanced-user-guides/monitoring-alerting-guides/enable-monitoring",
                     "how-to-guides/advanced-user-guides/monitoring-alerting-guides/uninstall-monitoring", 
@@ -771,7 +771,21 @@ const sidebars = {
                     "how-to-guides/advanced-user-guides/monitoring-alerting-guides/create-persistent-grafana-dashboard",
                     "how-to-guides/advanced-user-guides/monitoring-alerting-guides/debug-high-memory-usage",
                     "how-to-guides/advanced-user-guides/monitoring-alerting-guides/migrate-to-rancher-v2.5+-monitoring", 
-                     ]
+                    {
+                      type: 'category',
+                      label: 'Prometheus Federator Guides',
+                      link: {
+                        type: 'doc',
+                        id: "pages-for-subheaders/prometheus-federator-guides",
+                      },
+                      items: [
+                            "how-to-guides/advanced-user-guides/monitoring-alerting-guides/prometheus-federator-guides/enable-prometheus-federator",
+                            "how-to-guides/advanced-user-guides/monitoring-alerting-guides/prometheus-federator-guides/uninstall-prometheus-federator",
+                            "how-to-guides/advanced-user-guides/monitoring-alerting-guides/prometheus-federator-guides/customize-grafana-dashboards",
+                            "how-to-guides/advanced-user-guides/monitoring-alerting-guides/prometheus-federator-guides/set-up-workloads",
+                             ]
+                            }
+                          ]
               },
               {
               type: 'category',
@@ -832,6 +846,8 @@ const sidebars = {
                   ]
                 }
               ]
+            }
+          ]
     },      
     {
       type: 'category',
@@ -1056,6 +1072,17 @@ const sidebars = {
           },
           {
             type: 'category',
+            label: 'Prometheus Federator',
+            link: {
+              type: 'doc',
+              id: "pages-for-subheaders/prometheus-federator",
+            },
+            items: [
+              "reference-guides/prometheus-federator/rbac",
+                  ]
+          },
+          {
+            type: 'category',
             label: 'User Settings',
             link: {
               type: 'doc',
@@ -1264,7 +1291,6 @@ const sidebars = {
               "explanations/integrations-in-rancher/monitoring-and-alerting/built-in-dashboards",
               "explanations/integrations-in-rancher/monitoring-and-alerting/windows-support",
               "explanations/integrations-in-rancher/monitoring-and-alerting/promql-expressions",
-              "explanations/integrations-in-rancher/monitoring-and-alerting/prometheus-federator",
                   ]
             },
               "explanations/integrations-in-rancher/neuvector",
