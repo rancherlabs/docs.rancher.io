@@ -1156,9 +1156,11 @@ const sidebars = {
                 id: "pages-for-subheaders/rancher-v2.6-hardening-guides",
               },
               items: [
-                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/hardening-guide-with-cis-v1.6-benchmark",
-                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/self-assessment-guide-with-cis-v1.6-benchmark",
-                 ],
+                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/rke1-hardening-guide-with-cis-v1.6-benchmark",
+                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/rke1-self-assessment-guide-with-cis-v1.6-benchmark",
+                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/rke2-hardening-guide-with-cis-v1.6-benchmark",
+                "reference-guides/rancher-security/rancher-v2.6-hardening-guides/rke2-self-assessment-guide-with-cis-v1.6-benchmark",   
+              ],
             },
             {  
               type: 'category',
